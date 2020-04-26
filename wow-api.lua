@@ -4439,7 +4439,7 @@ function IsTutorialFlagged()
 end
 
 ---@return nil
-function IsUnitOnQuest(0, player)
+function IsUnitOnQuest(questIndex, unit)
 end
 
 ---@return unknown
