@@ -1,8 +1,6 @@
 ---@class MapUI
 C_Map = {}
 
-function C_Map.CloseWorldMapInteraction() end
-
 ---@param areaID number 
 ---@return string name
 function C_Map.GetAreaInfo(areaID) end
@@ -12,9 +10,9 @@ function C_Map.GetAreaInfo(areaID) end
 ---@return number|nil uiMapID
 function C_Map.GetBestMapForUnit(unitToken) end
 
----@param bountySetID number 
----@return number mapIDs
-function C_Map.GetBountySetMaps(bountySetID) end
+---@param uiMapID number 
+---@return number bountySetID
+function C_Map.GetBountySetIDForMap(uiMapID) end
 
 ---@return number uiMapID
 function C_Map.GetFallbackWorldMapID() end
@@ -126,12 +124,6 @@ MapCanvasPosition.BottomRight = 2
 MapCanvasPosition.TopLeft = 3
 MapCanvasPosition.TopRight = 4
 
----@class UIMapSystem
-local UIMapSystem = {}
-UIMapSystem.World = 0
-UIMapSystem.Taxi = 1
-UIMapSystem.Adventure = 2
-
 ---@class UIMapType
 local UIMapType = {}
 UIMapType.Cosmic = 0
@@ -142,20 +134,27 @@ UIMapType.Dungeon = 4
 UIMapType.Micro = 5
 UIMapType.Orphan = 6
 
+---@class UIMapSystem
+local UIMapSystem = {}
+UIMapSystem.World = 0
+UIMapSystem.Taxi = 1
+UIMapSystem.Adventure = 2
+
+---@class UiMapLayerInfo
+---@field layerWidth number 
+---@field layerHeight number 
+---@field tileWidth number 
+---@field tileHeight number 
+---@field minScale number 
+---@field maxScale number 
+---@field additionalZoomSteps number 
+local UiMapLayerInfo = {}
+
 ---@class MapBannerInfo
 ---@field areaPoiID number 
 ---@field name string 
 ---@field atlasName string 
----@field uiTextureKit string|nil 
 local MapBannerInfo = {}
-
----@class MapLinkInfo
----@field areaPoiID number 
----@field position table 
----@field name string 
----@field atlasName string 
----@field linkedUiMapID number 
-local MapLinkInfo = {}
 
 ---@class UiMapDetails
 ---@field mapID number 
@@ -170,13 +169,11 @@ local UiMapDetails = {}
 ---@field name string 
 local UiMapGroupMemberInfo = {}
 
----@class UiMapLayerInfo
----@field layerWidth number 
----@field layerHeight number 
----@field tileWidth number 
----@field tileHeight number 
----@field minScale number 
----@field maxScale number 
----@field additionalZoomSteps number 
-local UiMapLayerInfo = {}
+---@class MapLinkInfo
+---@field areaPoiID number 
+---@field position table 
+---@field name string 
+---@field atlasName string 
+---@field linkedUiMapID number 
+local MapLinkInfo = {}
 

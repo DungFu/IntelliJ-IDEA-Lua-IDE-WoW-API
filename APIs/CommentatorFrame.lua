@@ -80,10 +80,6 @@ function C_Commentator.GetHardlockWeight() end
 ---@return number angle
 function C_Commentator.GetHorizontalAngleThresholdToSmooth() end
 
----@param trackedSpellID number 
----@return number indirectSpellID
-function C_Commentator.GetIndirectSpellID(trackedSpellID) end
-
 ---@param mapIndex number 
 ---@param instanceIndex number 
 ---@return number, string|nil, number, number, number mapID, mapName, status, instanceIDLow, instanceIDHigh
@@ -95,9 +91,6 @@ function C_Commentator.GetLookAtLerpAmount() end
 ---@param mapIndex number 
 ---@return number, number, number, number teamSize, minLevel, maxLevel, numInstances
 function C_Commentator.GetMapInfo(mapIndex) end
-
----@return number seconds
-function C_Commentator.GetMatchDuration() end
 
 ---@return number maxNumPlayersPerTeam
 function C_Commentator.GetMaxNumPlayersPerTeam() end
@@ -126,12 +119,6 @@ function C_Commentator.GetNumMaps() end
 ---@param factionIndex number 
 ---@return number numPlayers
 function C_Commentator.GetNumPlayers(factionIndex) end
-
----@param teamIndex number 
----@param playerIndex number 
----@param spellID number 
----@return number, number, bool startTime, duration, enable
-function C_Commentator.GetPlayerAuraInfo(teamIndex, playerIndex, spellID) end
 
 ---@param teamIndex number 
 ---@param playerIndex number 
@@ -191,15 +178,19 @@ function C_Commentator.GetTeamHighlightColor(teamIndex) end
 ---@return number|nil timeLeft
 function C_Commentator.GetTimeLeftInMatch() end
 
----@param indirectSpellID number 
----@return number trackedSpellID
-function C_Commentator.GetTrackedSpellID(indirectSpellID) end
+---@param teamIndex number 
+---@param playerIndex number 
+---@return number|nil trackedDefensiveCooldowns
+function C_Commentator.GetTrackedDefensiveCooldowns(teamIndex, playerIndex) end
 
 ---@param teamIndex number 
 ---@param playerIndex number 
----@param category TrackedSpellCategory 
----@return number|nil spells
-function C_Commentator.GetTrackedSpells(teamIndex, playerIndex, category) end
+---@return number|nil trackedCooldowns
+function C_Commentator.GetTrackedOffensiveCooldowns(teamIndex, playerIndex) end
+
+---@param token string 
+---@return number teamIndex
+function C_Commentator.GetUnitTeamIndex(token) end
 
 ---@param listID number 
 ---@return string, number, number, bool name, minPlayers, maxPlayers, isArena
@@ -219,6 +210,12 @@ function C_Commentator.IsSpectating() end
 ---@return bool isDefensiveTrigger
 function C_Commentator.IsTrackedDefensiveAura(spellID) end
 
+---@param teamIndex number 
+---@param playerIndex number 
+---@param spellID number 
+---@return bool isTrackedCooldown
+function C_Commentator.IsTrackedDefensiveCooldown(teamIndex, playerIndex, spellID) end
+
 ---@param spellID number 
 ---@return bool isOffensiveTrigger
 function C_Commentator.IsTrackedOffensiveAura(spellID) end
@@ -226,9 +223,8 @@ function C_Commentator.IsTrackedOffensiveAura(spellID) end
 ---@param teamIndex number 
 ---@param playerIndex number 
 ---@param spellID number 
----@param category TrackedSpellCategory 
----@return bool isTracked
-function C_Commentator.IsTrackedSpell(teamIndex, playerIndex, spellID, category) end
+---@return bool isTrackedCooldown
+function C_Commentator.IsTrackedOffensiveCooldown(teamIndex, playerIndex, spellID) end
 
 ---@return bool isUsingSmartCamera
 function C_Commentator.IsUsingSmartCamera() end
@@ -338,10 +334,6 @@ function C_Commentator.SetPositionLerpAmount(amount) end
 
 ---@param specID number 
 ---@param spellIDs number 
-function C_Commentator.SetRequestedDebuffCooldowns(specID, spellIDs) end
-
----@param specID number 
----@param spellIDs number 
 function C_Commentator.SetRequestedDefensiveCooldowns(specID, spellIDs) end
 
 ---@param specID number 
@@ -388,13 +380,6 @@ function C_Commentator.UpdatePlayerInfo() end
 function C_Commentator.ZoomIn() end
 
 function C_Commentator.ZoomOut() end
-
----@class TrackedSpellCategory
-local TrackedSpellCategory = {}
-TrackedSpellCategory.Offensive = 0
-TrackedSpellCategory.Defensive = 1
-TrackedSpellCategory.Debuff = 2
-TrackedSpellCategory.Count = 3
 
 ---@class NameOverrideEntry
 ---@field originalName string 

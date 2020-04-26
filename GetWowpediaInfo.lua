@@ -17,7 +17,7 @@ local BASE_WOWPEDIA_ADDRESS = "https://wow.gamepedia.com"
 --download parent page with links to all sub pages
 require("socket")
 local https = require("ssl.https")
-local mainPageBody = https.request(BASE_WOWPEDIA_ADDRESS.. "/Global_functions")
+local mainPageBody = https.request(BASE_WOWPEDIA_ADDRESS.. "/Global_functions/Classic")
 
 --split the html page into lines
 local lines = {}
@@ -44,6 +44,10 @@ for k,v in pairs(lines) do
         if string.find(v, "/API_") then
             _,start = string.find(v,"<a href=\"")
             finish, _ = string.find(v,"\" title=")
+            local finish2, _ = string.find(v,"\" class=")
+            if finish2 and finish2 < finish then
+                finish = finish2
+            end
             address = string.sub(v, start+1, finish-1)
 
             if address then
@@ -97,6 +101,9 @@ for k,v in pairs(api_entries) do
                 --some of the arguments have a # symbol in them, i.e. #slot to indicate the slot number
                 line = line:gsub("#", "")
 
+                --remove leading/trailing whitespace
+                line = line:gsub("^%s*(.-)%s*$", "%1")
+
                 table.insert(api_entries[k].functionHeader, line)
             end
 
@@ -142,6 +149,12 @@ for k,v in pairs(api_entries) do
                 functionName = string.sub(v2, start+1 or 1, finish-1):gsub("%s+", "")
             end
 
+            if functionName and string.len(functionName) > string.len(k) then
+                local _,namePos = string.find("." .. functionName, k)
+                if namePos and string.len(functionName)+1 == namePos then
+                    functionName = k
+                end
+            end
 
             --------------------------------------------------------------
             ------this is where we parse out the returns and the arguments
