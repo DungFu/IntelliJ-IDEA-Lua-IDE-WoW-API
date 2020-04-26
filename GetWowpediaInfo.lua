@@ -212,8 +212,7 @@ end
 local out = io.open("wow-api.lua", "w+")
 
 local TEMPLATE = [==========[
----@return %s
-function %s(%s)
+%sfunction %s(%s)
 end
 
 ]==========]
@@ -226,14 +225,20 @@ end
 table.sort(apiKeys)
 
 for _,k in pairs(apiKeys) do
+    local preFunction = ""
     local functionName = k
-    local returnValues
     local argValues
 
+    if api_entries[k].address then
+        preFunction = preFunction .. "---@url " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
+    end
+
     if api_entries[k].returns_all then
-        returnValues = api_entries[k].returns_all
+        if api_entries[k].returns_all ~= "nil" then
+            preFunction = preFunction .. "---@return " .. api_entries[k].returns_all .. "\n"
+        end
     else
-        returnValues = "unknown"
+        preFunction = preFunction .. "---@return " .. "unknown\n"
     end
 
     if api_entries[k].arguments_all then
@@ -242,7 +247,7 @@ for _,k in pairs(apiKeys) do
         argValues = ""
     end
 
-    out:write(TEMPLATE:format(returnValues, functionName, argValues))
+    out:write(TEMPLATE:format(preFunction, functionName, argValues))
 end
 
 out:close()
