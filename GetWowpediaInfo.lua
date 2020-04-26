@@ -92,6 +92,10 @@ for k,v in pairs(api_entries) do
                 line = line:gsub("%[", "") --remove the open square brackets
                 line = line:gsub("%]", "") --remove the close square brackets
 
+                --some of the arguments fields are wrapped in curly brackets (to indicate they are optional). For our purposes we should just list them all
+                line = line:gsub("%{", "") --remove the open curly brackets
+                line = line:gsub("%}", "") --remove the close curly brackets
+
                 --some of the arguments have "local" in them still, which shouldn't be there
                 line = line:gsub("local", "")
 

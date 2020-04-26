@@ -5675,11 +5675,11 @@ function SetTradeMoney(copper)
 end
 
 ---@return nil
-function SetTradeSkillInvSlotFilter(slotIndex, onOff{, exclusive} )
+function SetTradeSkillInvSlotFilter(slotIndex, onOff, exclusive )
 end
 
 ---@return nil
-function SetTradeSkillSubClassFilter(slotIndex, onOff{, exclusive})
+function SetTradeSkillSubClassFilter(slotIndex, onOff, exclusive)
 end
 
 ---@return nil
