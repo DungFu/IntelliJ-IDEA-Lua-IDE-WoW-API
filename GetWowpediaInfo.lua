@@ -111,6 +111,23 @@ for k,v in pairs(api_entries) do
                 table.insert(api_entries[k].functionHeader, line)
             end
 
+            api_entries[k].description = nil
+            if #api_entries[k].functionHeader > 0 then
+                local _,start = string.find(spellPageBody,"<div id=\"bodyContent\"")
+                if start then
+                    local _,dstart = string.find(spellPageBody, "<p>", start)
+                    local dfinish, _ = string.find(spellPageBody, "</p>", start)
+                    if dstart and dfinish then
+                        local description = string.sub(spellPageBody, dstart+1, dfinish-1)
+                        description = description:gsub("%b<>", "") --this removes angle brackets and everything inside them
+                        description = description:gsub("\"", "")
+                        description = description:gsub("\n", " ")
+                        description = description:gsub("^%s*(.-)%s*$", "%1")
+                        api_entries[k].description = description
+                    end
+                end
+            end
+
 
             --[[
             --split between h2 chunks to parse out argument and returns
@@ -276,6 +293,10 @@ for _,k in pairs(apiKeys) do
     local preFunction = ""
     local functionName = k
     local argValues = ""
+
+    if api_entries[k].description then
+        preFunction = preFunction .. "--- " .. api_entries[k].description .. "\n"
+    end
 
     if api_entries[k].address then
         preFunction = preFunction .. "-- " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
