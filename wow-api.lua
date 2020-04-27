@@ -1241,7 +1241,7 @@ end
 
 -- https://wow.gamepedia.com/API_EquipItemByName
 -- @param  itemId_or_itemName_or_itemLink
--- @param  slot
+-- @param  slot - Numeric - (optional) - The inventory slot to put the item in, obtained via GetInventorySlotInfo().
 function EquipItemByName(itemId_or_itemName_or_itemLink, slot)
 end
 
@@ -1546,7 +1546,7 @@ function GetAreaSpiritHealerTime()
 end
 
 -- https://wow.gamepedia.com/API_GetAtlasInfo
--- @param  atlas
+-- @param  atlas - string - Name of the atlas, e.g. MainPet-PetFamilyFrame
 -- @return info - structure - AtlasInfo
 function GetAtlasInfo(atlas)
 end
@@ -2165,7 +2165,7 @@ function GetContainerFreeSlots(index, returnTable)
 end
 
 -- https://wow.gamepedia.com/API_GetContainerItemCooldown
--- @param  bagID
+-- @param  bagID - number - number of the bag the item is in, 0 is your backpack, 1-4 are the four additional bags
 -- @param  slot - number - slot number of the bag item you want the info for.
 -- @return startTime
 -- @return duration - the duration of the cooldown period
@@ -2218,14 +2218,14 @@ function GetContainerItemPurchaseItem()
 end
 
 -- https://wow.gamepedia.com/API_GetContainerNumFreeSlots
--- @param  bagID
+-- @param  bagID - Integer - the slot containing the bag, e.g. 0 for backpack, etc.
 -- @return numberOfFreeSlots - Integer - the number of free slots in the specified bag.
 -- @return bagType - Integer (itemFamily Bitfield) - The type of the container, described using bits to indicate its permissible contents.
 function GetContainerNumFreeSlots(bagID)
 end
 
 -- https://wow.gamepedia.com/API_GetContainerNumSlots
--- @param  bagID
+-- @param  bagID - Integer - the slot containing the bag, e.g. 0 for backpack, etc.
 -- @return numberOfSlots - Integer - the number of slots in the specified bag, or 0 if there is no bag in the given slot.
 function GetContainerNumSlots(bagID)
 end
@@ -2893,7 +2893,7 @@ end
 
 -- https://wow.gamepedia.com/API_GetItemFamily
 -- @param  itemId_or_itemName_or_itemLink
--- @return bagType
+-- @return bagType - Bitfield - What type of bags an item can go into or if the item is a container what it can contain
 function GetItemFamily(itemId_or_itemName_or_itemLink)
 end
 
@@ -3667,8 +3667,8 @@ end
 -- @param  assignment - string - The role to search, either MAINTANK or MAINASSIST (not case-sensitive).
 -- @param  raidmember - string - UnitId
 -- @param  exactMatch - boolean
--- @return raidIndex1
--- @return raidIndex2
+-- @return raidIndex1 - number - The first found raid member with the requested role, nil if none are found.
+-- @return raidIndex2 - number - The second found raid member with the requested role, nil if one/none are found.
 function GetPartyAssignment(assignment, raidmember, exactMatch)
 end
 
@@ -3809,7 +3809,7 @@ end
 -- @return maxSkillLevel - Number - the current skill cap (75 for apprentice, 150 for journeyman etc.)
 -- @return numAbilities - Number - The number of abilities/icons listed. These are the icons you put on your action bars.
 -- @return spelloffset - Number - The offset id of the first Spell of this profession. (you can CastSpell(spelloffset + 1, Spell) to use the first spell of this profession)
--- @return skillLine
+-- @return skillLine - Number - Reference to the profession.
 -- @return skillModifier - Number - Additional modifiers to your profession levels. IE: Lures for Fishing.
 -- @return specializationIndex - Number - A value indicating which specialization is known (ie. Transmute specialist for Alchemist)
 -- @return specializationOffset - Number - Haven't figured this one out yet
@@ -3871,7 +3871,7 @@ end
 -- https://wow.gamepedia.com/API_GetQuestItemLink
 -- @param  type - String - required, reward or choice
 -- @param  index - Integer - Quest reward item index.
--- @return itemLink
+-- @return itemLink - String - The link to the quest item specified.
 function GetQuestItemLink(type, index)
 end
 
@@ -3897,7 +3897,7 @@ end
 -- https://wow.gamepedia.com/API_GetQuestLogItemLink
 -- @param  type - String - required, reward or choice
 -- @param  index - Table - Integer - Quest reward item index (starts with 1).
--- @return itemLink
+-- @return itemLink - String - The link to the quest item specified
 function GetQuestLogItemLink(type, index)
 end
 
@@ -3929,7 +3929,7 @@ end
 
 -- https://wow.gamepedia.com/API_GetQuestLogRewardInfo
 -- @param  itemIndex - Number - Index of the item reward to query, up to GetNumQuestLogRewards
--- @param  questID
+-- @param  questID - Number - Unique identifier for a quest.
 -- @return itemName - String - The name of the quest item
 -- @return itemTexture - String - The texture of the quest item
 -- @return numItems - Number - How many of the quest item
@@ -4058,7 +4058,7 @@ function GetRaidProfileSavedPosition()
 end
 
 -- https://wow.gamepedia.com/API_GetRaidRosterInfo
--- @param  raidIndex
+-- @param  raidIndex - Number - Index of raid member between 1 and MAX_RAID_MEMBERS (40). If you specify an index that is out of bounds, the function returns nil.
 -- @return zone - String - The name of the zone this character is currently in.  This is the value returned by GetRealZoneText.  It is the same value you see if you mouseover their portrait (if in group).  If the character is offline, this value will be the string Offline.
 -- @return online - Boolean - Returns 1 if raid member is online, nil otherwise.
 -- @return isDead - Boolean - Returns 1 if raid member is dead (hunters Feigning Death are considered alive), nil otherwise.
@@ -4583,7 +4583,7 @@ end
 
 -- https://wow.gamepedia.com/API_GetText
 -- @param  token - string - Reputation index
--- @param  gender
+-- @param  gender - number - Gender ID
 -- @param  ordinal - unknown
 -- @return text - string - The localized text
 function GetText(token, gender, ordinal)
@@ -5537,7 +5537,7 @@ function IsMovieLocal()
 end
 
 -- https://wow.gamepedia.com/API_IsMoviePlayable
--- @param  movieID
+-- @param  movieID - number
 -- @return playable - boolean
 function IsMoviePlayable(movieID)
 end
@@ -5584,7 +5584,7 @@ function IsPetAttackActive()
 end
 
 -- https://wow.gamepedia.com/API_IsPlayerAttacking
--- @param  unit
+-- @param  unit - string
 -- @return isAttacking - boolean
 function IsPlayerAttacking(unit)
 end
@@ -6271,7 +6271,7 @@ function PickupBagFromSlot(slot)
 end
 
 -- https://wow.gamepedia.com/API_PickupContainerItem
--- @param  bagID
+-- @param  bagID - Number - id of the bag the slot is located in.
 -- @param  slot - Number - slot inside the bag (top left slot is 1, slot to the right of it is 2).
 function PickupContainerItem(bagID, slot)
 end
@@ -7066,7 +7066,7 @@ end
 
 -- https://wow.gamepedia.com/API_SetPortraitTextureFromCreatureDisplayID
 -- @param  textureObject - table
--- @param  creatureDisplayID
+-- @param  creatureDisplayID - number
 function SetPortraitTextureFromCreatureDisplayID(textureObject, creatureDisplayID)
 end
 
@@ -7769,14 +7769,14 @@ end
 -- @param  unit - String - The UnitId of the unit to check e.g. player
 -- @return className - string - Localized class name, suitable for use in user interfaces; e.g. Mage, Warrior, Guerrier.
 -- @return classFilename - string - Localization-independent class name, used as some table keys; e.g. MAGE, WARRIOR, DEATHKNIGHT.
--- @return classID
+-- @return classID - number - Numeric localization-independent class ID.
 function UnitClass(unit)
 end
 
 -- https://wow.gamepedia.com/API_UnitClassBase
 -- @param  unit - string
 -- @return classFilename - string
--- @return classID
+-- @return classID - number
 function UnitClassBase(unit)
 end
 
@@ -7928,7 +7928,7 @@ function UnitIsCharmed(unit)
 end
 
 -- https://wow.gamepedia.com/API_UnitIsCivilian
--- @param  unit
+-- @param  unit - string - Only works on enemy faction NPCs.
 -- @return isCivilian - boolean
 function UnitIsCivilian(unit)
 end
@@ -8099,7 +8099,7 @@ function UnitPVPName(unit)
 end
 
 -- https://wow.gamepedia.com/API_UnitPVPRank
--- @param  unit
+-- @param  unit - string
 -- @return rankID - number - Starts at 5 (not at 1) for the first rank. Returns 0 if the unit has no rank. Can be used in GetPVPRankInfo() for rank information.
 function UnitPVPRank(unit)
 end
@@ -8132,8 +8132,8 @@ function UnitPosition(unit)
 end
 
 -- https://wow.gamepedia.com/API_UnitPower
--- @param  UnitId
--- @param  powerType
+-- @param  UnitId - String - Unit whose power should be returned
+-- @param  powerType - Number (optional) - Type of resource (mana/rage/energy/etc) to query
 -- @param  unmodified - Boolean (optional) - Return the higher precision internal value (for graphical use only)
 -- @return power - Number - the unit's current power level.
 function UnitPower(UnitId, powerType, unmodified)
@@ -8146,8 +8146,8 @@ function UnitPowerDisplayMod(powerType)
 end
 
 -- https://wow.gamepedia.com/API_UnitPowerMax
--- @param  UnitId
--- @param  powerType
+-- @param  UnitId - String - Unit whose maximum power should be returned
+-- @param  powerType - String (optional) - Type of resource (mana/rage/energy/etc) to query
 -- @param  unmodified - Boolean (optional) - Return the higher precision internal value (for graphical use only)
 -- @return maxpower - Number - the unit's maximum amount of the queried resource.
 function UnitPowerMax(UnitId, powerType, unmodified)
@@ -8156,7 +8156,7 @@ end
 -- https://wow.gamepedia.com/API_UnitPowerType
 -- @param  unit - String (unitId) - The unit whose power type to query.
 -- @param  index - Number - Optional value for classes with multiple powerTypes. If not specified, information about the first (currently active) power type will be returned.
--- @return powerType
+-- @return powerType - Number - the ID corresponding the the unit's queried power type.
 -- @return powerToken - String - also the power type:
 --           MANA
 --           RAGE
@@ -8183,10 +8183,10 @@ function UnitPowerType(unit, index)
 end
 
 -- https://wow.gamepedia.com/API_UnitRace
--- @param  unit
+-- @param  unit - String - unit to query, e.g. player
 -- @return raceName - String - Localized race name, suitable for use in user interfaces.
 -- @return raceFile - String - Localization-independent race name, suitable for use as table keys.
--- @return raceID
+-- @return raceID - Number - Numeric localization-independent raceID.
 function UnitRace(unit)
 end
 
@@ -8251,7 +8251,7 @@ function UnitResistance(unitId, resistanceIndex)
 end
 
 -- https://wow.gamepedia.com/API_UnitSelectionColor
--- @param  UnitId
+-- @param  UnitId - String - The unit whose selection colour should be returned.
 -- @param  useExtendedColors - Boolean (optional) - If true, a more appropriate colour of the unit's selection will be returned. For instance, if used on a dead hostile target, the default return will red (hostile), but the extended return will be grey (dead).
 -- @return red - Number - A number between 0 and 1.
 -- @return green - Number - A number between 0 and 1.

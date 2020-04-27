@@ -189,6 +189,9 @@ for k,v in pairs(api_entries) do
 
                         if spellPageBody then
                             local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
+                            if not start then
+                                _, start = string.find(spellPageBody,"<dt><a.->"..option.."[(&#160;)]*</a>.-</dt>")
+                            end
                             if start then
                                 local begin, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
                                 local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
@@ -225,6 +228,9 @@ for k,v in pairs(api_entries) do
 
                         if spellPageBody then
                             local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
+                            if not start then
+                                _, start = string.find(spellPageBody,"<dt><a.->"..option.."[(&#160;)]*</a>.-</dt>")
+                            end
                             if start then
                                 local begin, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
                                 local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
