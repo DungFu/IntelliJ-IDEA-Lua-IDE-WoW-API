@@ -190,9 +190,9 @@ for k,v in pairs(api_entries) do
                         if spellPageBody then
                             local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
                             if start then
-                                local _, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
+                                local begin, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
                                 local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
-                                if ddstart and ddfinish then
+                                if begin == start - 4 and ddstart and ddfinish then
                                     local optionDetails = string.sub(spellPageBody, ddstart + 1, ddfinish - 1)
                                     optionDetails = optionDetails:gsub("%b<>", "") --this removes angle brackets and everything inside them
                                     optionDetails = optionDetails:gsub("\"", "")
@@ -226,9 +226,9 @@ for k,v in pairs(api_entries) do
                         if spellPageBody then
                             local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
                             if start then
-                                local _, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
+                                local begin, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
                                 local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
-                                if ddstart and ddfinish then
+                                if begin == start - 4 and ddstart and ddfinish then
                                     local optionDetails = string.sub(spellPageBody, ddstart + 1, ddfinish - 1)
                                     optionDetails = optionDetails:gsub("%b<>", "") --this removes angle brackets and everything inside them
                                     optionDetails = optionDetails:gsub("\"", "")

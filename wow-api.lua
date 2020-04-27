@@ -2255,7 +2255,7 @@ end
 -- https://wow.gamepedia.com/API_GetCraftInfo
 -- @param  index - Numeric - 1 to GetNumCrafts()
 -- @return craftName - Name of the item you can craft
--- @return craftSubSpellName - String - header or how hard it is to create the item; trivial, easy, medium or optimal.
+-- @return craftSubSpellName
 -- @return craftType - String - header or how hard it is to create the item; trivial, easy, medium or optimal.
 -- @return numAvailable - This is the number of items you can create with the reagents you have in your inventory (the number is also shown in the UI).
 -- @return isExpanded - Only applies to headers. Indicates whether they are expanded or contracted.  Nil if not applicable.
@@ -3184,7 +3184,7 @@ end
 -- @return price - Number - The price of the item (in copper)
 -- @return quantity - Number - The quantity that will be purchased (the batch size, e.g. 5 for vials)
 -- @return numAvailable - Number - The number of this item that the merchant has in stock. -1 for unlimited stock.
--- @return isPurchasable - Number - Is 1 if the player can use this item, nil otherwise
+-- @return isPurchasable
 -- @return isUsable - Number - Is 1 if the player can use this item, nil otherwise
 -- @return extendedCost - Number - Is 1 if the item has extended (PvP) cost info, nil otherwise
 function GetMerchantItemInfo(index)
