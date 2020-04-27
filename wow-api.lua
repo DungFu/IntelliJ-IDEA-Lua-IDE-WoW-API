@@ -2031,7 +2031,7 @@ function GetGuildRenameRequired()
 end
 
 ---@url https://wow.gamepedia.com/API_GetGuildRosterInfo
----@return class, achievementPoints, achievementRank, isMobile, canSoR, repStanding, GUID
+---@return name, rankName, rankIndex, level, classDisplayName, zone, publicNote, officerNote, isOnline, status, class, achievementPoints, achievementRank, isMobile, canSoR, repStanding, GUID
 function GetGuildRosterInfo(index)
 end
 
