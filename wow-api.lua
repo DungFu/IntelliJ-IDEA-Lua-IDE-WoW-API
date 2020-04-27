@@ -1778,6 +1778,7 @@ function GetCallPetSpellInfo()
 end
 
 ---@url https://wow.gamepedia.com/API_GetCameraZoom
+---@return zoom
 function GetCameraZoom()
 end
 
@@ -1976,6 +1977,7 @@ function GetCraftSkillLine(n)
 end
 
 ---@url https://wow.gamepedia.com/API_GetCraftSpellFocus
+---@return catalystName, number1
 function GetCraftSpellFocus(index)
 end
 
@@ -2813,12 +2815,12 @@ function GetNumBattlefieldFlagPositions()
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumBattlefieldScores
----@return x
+---@return numBattlefieldScores
 function GetNumBattlefieldScores()
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumBattlefieldStats
----@return x
+---@return numStats
 function GetNumBattlefieldStats()
 end
 
@@ -2903,6 +2905,7 @@ function GetNumLanguages()
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumLootItems
+---@return numLootItems
 function GetNumLootItems()
 end
 
@@ -2938,6 +2941,7 @@ function GetNumQuestItemDrops()
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumQuestItems
+---@return numRequiredItems
 function GetNumQuestItems()
 end
 
@@ -2947,6 +2951,7 @@ function GetNumQuestLeaderBoards(questID)
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumQuestLogChoices
+---@return numQuestChoices
 function GetNumQuestLogChoices()
 end
 
@@ -2960,6 +2965,7 @@ function GetNumQuestLogRewardSpells()
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumQuestLogRewards
+---@return numQuestRewards
 function GetNumQuestLogRewards()
 end
 
@@ -3039,6 +3045,7 @@ function GetNumTradeSkills()
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumTrainerServices
+---@return numTrainerServices
 function GetNumTrainerServices()
 end
 
@@ -3216,6 +3223,7 @@ function GetPlayerInfoByGUID(guid)
 end
 
 ---@url https://wow.gamepedia.com/API_GetPlayerTradeMoney
+---@return playerTradeMoney
 function GetPlayerTradeMoney()
 end
 
@@ -3242,6 +3250,7 @@ function GetProfessionInfo(index)
 end
 
 ---@url https://wow.gamepedia.com/API_GetProgressText
+---@return progress
 function GetProgressText()
 end
 
@@ -3250,6 +3259,7 @@ function GetPromotionRank()
 end
 
 ---@url https://wow.gamepedia.com/API_GetQuestBackgroundMaterial
+---@return material
 function GetQuestBackgroundMaterial()
 end
 
@@ -3288,6 +3298,7 @@ function GetQuestItemLink(type, index)
 end
 
 ---@url https://wow.gamepedia.com/API_GetQuestLogChoiceInfo
+---@return name, texture, numItems, quality, isUsable
 function GetQuestLogChoiceInfo(itemNum)
 end
 
@@ -3392,6 +3403,7 @@ function GetQuestText()
 end
 
 ---@url https://wow.gamepedia.com/API_GetQuestTimers
+---@return questTimers
 function GetQuestTimers()
 end
 
@@ -3498,6 +3510,7 @@ function GetRewardSpell()
 end
 
 ---@url https://wow.gamepedia.com/API_GetRewardText
+---@return reward
 function GetRewardText()
 end
 
@@ -3539,6 +3552,7 @@ function GetScreenDPIScale()
 end
 
 ---@url https://wow.gamepedia.com/API_GetScreenHeight
+---@return screenHeight
 function GetScreenHeight()
 end
 
@@ -3548,6 +3562,7 @@ function GetScreenResolutions()
 end
 
 ---@url https://wow.gamepedia.com/API_GetScreenWidth
+---@return screenWidth
 function GetScreenWidth()
 end
 
@@ -3820,6 +3835,7 @@ function GetTalentTabInfo(index)
 end
 
 ---@url https://wow.gamepedia.com/API_GetTargetTradeMoney
+---@return targetTradeMoney
 function GetTargetTradeMoney()
 end
 
@@ -3899,6 +3915,7 @@ function GetTradeSkillInvSlotFilter()
 end
 
 ---@url https://wow.gamepedia.com/API_GetTradeSkillInvSlots
+---@return invSlots
 function GetTradeSkillInvSlots()
 end
 
@@ -3948,6 +3965,7 @@ function GetTradeSkillSubClassFilter(filterIndex)
 end
 
 ---@url https://wow.gamepedia.com/API_GetTradeSkillSubClasses
+---@return subClasses
 function GetTradeSkillSubClasses()
 end
 
@@ -3972,10 +3990,12 @@ function GetTradeskillRepeatCount()
 end
 
 ---@url https://wow.gamepedia.com/API_GetTrainerGreetingText
+---@return greetingText
 function GetTrainerGreetingText()
 end
 
 ---@url https://wow.gamepedia.com/API_GetTrainerSelectionIndex
+---@return selectionIndex
 function GetTrainerSelectionIndex()
 end
 
@@ -7432,6 +7452,7 @@ function getmetatable()
 end
 
 ---@url https://wow.gamepedia.com/API_getn
+---@return size
 function getn(table)
 end
 
