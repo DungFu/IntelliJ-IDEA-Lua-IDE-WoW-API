@@ -1315,7 +1315,7 @@ end
 function DoCraft()
 end
 
---- 
+--- DoEmote
 -- https://wow.gamepedia.com/API_DoEmote
 -- @param  token - String - the token that describes which emote is being used.  See Emotes Tokens
 -- @param  target - String - UnitId of who the emote will be performed on. If nil, then it performs the emote on your current target, or yourself if you don't have a target. If the specified target does not exist or is out of range, then it performs the emote on yourself.
@@ -1554,6 +1554,7 @@ end
 function GMReportLag()
 end
 
+--- GMRequestPlayerInfo
 -- https://wow.gamepedia.com/API_GMRequestPlayerInfo
 function GMRequestPlayerInfo()
 end
@@ -1960,7 +1961,7 @@ end
 function GetBattlefieldMapIconScale()
 end
 
---- 
+--- GetBattlefieldPortExpiration
 -- https://wow.gamepedia.com/API_GetBattlefieldPortExpiration
 -- @param  index - Integer - Index of queue to get the expiration from
 -- @return expiration - Integer - Remaining time of battlefield port in seconds
@@ -2121,7 +2122,7 @@ end
 function GetBindingKey(command)
 end
 
---- 
+--- GetBindingText
 -- https://wow.gamepedia.com/API_GetBindingText
 -- @param  key - String - The name of the key (e.g. UP, SHIFT-PAGEDOWN)
 -- @param  prefix - String - The prefix of the variable name you're looking for.  Usually KEY_ or BINDING_NAME_.
@@ -2130,6 +2131,7 @@ end
 function GetBindingText(key, prefix, abbreviate)
 end
 
+--- GetBlockChance
 -- https://wow.gamepedia.com/API_GetBlockChance
 function GetBlockChance()
 end
@@ -2237,7 +2239,7 @@ end
 function GetChannelDisplayInfo(i)
 end
 
---- 
+--- GetChannelList
 -- https://wow.gamepedia.com/API_GetChannelList
 -- @return id1
 -- @return name1
@@ -2525,6 +2527,7 @@ end
 function GetCraftIcon()
 end
 
+--- GetCraftInfo
 -- https://wow.gamepedia.com/API_GetCraftInfo
 -- @param  index - Numeric - 1 to GetNumCrafts()
 -- @return craftName - Name of the item you can craft
@@ -2702,6 +2705,7 @@ end
 function GetDetailedItemLevelInfo(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
+--- GetDodgeChance
 -- https://wow.gamepedia.com/API_GetDodgeChance
 function GetDodgeChance()
 end
@@ -3021,7 +3025,7 @@ end
 function GetInboxItemLink(message, attachment)
 end
 
---- 
+--- GetInboxNumItems
 -- https://wow.gamepedia.com/API_GetInboxNumItems
 -- @return numItems
 -- @return totalItems
@@ -4091,6 +4095,7 @@ end
 function GetPVPYesterdayStats()
 end
 
+--- GetParryChance
 -- https://wow.gamepedia.com/API_GetParryChance
 function GetParryChance()
 end
@@ -4354,7 +4359,7 @@ end
 function GetQuestLogItemDrop()
 end
 
---- 
+--- GetQuestLogItemLink
 -- https://wow.gamepedia.com/API_GetQuestLogItemLink
 -- @param  type - String - required, reward or choice
 -- @param  index - Table - Integer - Quest reward item index (starts with 1).
@@ -6347,6 +6352,7 @@ end
 function IsSpellInRange(index, bookType, target)
 end
 
+--- IsSpellKnown
 -- https://wow.gamepedia.com/API_IsSpellKnown
 -- @param  spellID - integer - the spell ID number
 -- @param  isPetSpell - boolean (optional) - if true, will check if the currently active pet knows the spell; if false or omitted, will check if the player knows the spell
@@ -9874,6 +9880,7 @@ end
 function strfind(string, pattern, initpos, plain)
 end
 
+--- string.byte
 -- @param  s
 -- @param  index
 -- @param  endIndex
@@ -9881,6 +9888,7 @@ end
 function string.byte(s, index, endIndex)
 end
 
+--- string.char
 -- @param  i1
 -- @param  i2
 -- @param  ...
@@ -9888,6 +9896,7 @@ end
 function string.char(i1, i2, ...)
 end
 
+--- string.find
 -- @param  string
 -- @param  pattern
 -- @param  initpos
@@ -9912,15 +9921,18 @@ end
 function string.join()
 end
 
+--- string.len
 -- @param  s
 function string.len(s)
 end
 
+--- string.lower
 -- @param  s
 -- @return lowerS
 function string.lower(s)
 end
 
+--- string.match
 -- @param  string
 -- @param  pattern
 -- @param  initpos
@@ -9930,11 +9942,13 @@ end
 function string.match(string, pattern, initpos)
 end
 
+--- string.rep
 -- @param  s
 -- @param  n
 function string.rep(s, n)
 end
 
+--- string.reverse
 -- @param  string
 function string.reverse(string)
 end
@@ -9942,6 +9956,7 @@ end
 function string.split()
 end
 
+--- string.sub
 -- @param  s
 -- @param  i
 -- @param  j
@@ -9951,6 +9966,7 @@ end
 function string.trim()
 end
 
+--- string.upper
 -- @param  s
 function string.upper(s)
 end
@@ -10059,6 +10075,7 @@ end
 function table.maxn()
 end
 
+--- table.remove
 -- @param  table
 -- @param  pos
 function table.remove(table, pos)
