@@ -172,13 +172,35 @@ for k,v in pairs(api_entries) do
                 local _,argStart = string.find(v2,"%(") --find the index where the right side of the expression starts
                 local argFinish, _ = string.find(v2,"%)")
 
+                local spellPageBody = nil
+
                 if argStart and argFinish then
                     api_entries[functionName].arguments = {}
+                    api_entries[functionName].argumentsDetails = {}
                     local arguments_all = string.sub(v2, argStart+1, argFinish-1)
                     api_entries[functionName].arguments_all = arguments_all
 
                     for option in (","..arguments_all..","):gmatch("[^,]+") do
-                        option = option:gsub("^%s*", "") --remove leading white space
+                        option = option:gsub("^%s*(.-)%s*$", "%1") --remove leading/trailing white space
+
+                        if not spellPageBody and api_entries[functionName].address then
+                            spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[functionName].address)
+                        end
+
+                        if spellPageBody then
+                            local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
+                            if start then
+                                local _, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
+                                local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
+                                if ddstart and ddfinish then
+                                    local optionDetails = string.sub(spellPageBody, ddstart + 1, ddfinish - 1)
+                                    optionDetails = optionDetails:gsub("%b<>", "") --this removes angle brackets and everything inside them
+                                    optionDetails = optionDetails:gsub("\"", "")
+                                    optionDetails = optionDetails:gsub("^%s*(.-)%s*$", "%1")
+                                    api_entries[functionName].argumentsDetails[option] = optionDetails
+                                end
+                            end
+                        end
                         table.insert(api_entries[functionName].arguments, option)
                     end
                 end
@@ -189,12 +211,32 @@ for k,v in pairs(api_entries) do
 
                 if returnStart and returnFinish then
                     api_entries[functionName].returns = {}
+                    api_entries[functionName].returnsDetails = {}
                     local returns_all = string.sub(v2, returnStart, returnFinish-1)
 
                     api_entries[functionName].returns_all = returns_all
 
                     for option in (","..returns_all..","):gmatch("[^,]+") do
-                        option = option:gsub("^%s*", "") --remove leading white space
+                        option = option:gsub("^%s*(.-)%s*$", "%1") --remove leading/trailing white space
+
+                        if not spellPageBody and api_entries[functionName].address then
+                            spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[functionName].address)
+                        end
+
+                        if spellPageBody then
+                            local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
+                            if start then
+                                local _, ddstart = string.find(spellPageBody, "</dt>[ \n]*<dd>", start - 5)
+                                local ddfinish, _ = string.find(spellPageBody, "</dd>", ddstart)
+                                if ddstart and ddfinish then
+                                    local optionDetails = string.sub(spellPageBody, ddstart + 1, ddfinish - 1)
+                                    optionDetails = optionDetails:gsub("%b<>", "") --this removes angle brackets and everything inside them
+                                    optionDetails = optionDetails:gsub("\"", "")
+                                    optionDetails = optionDetails:gsub("^%s*(.-)%s*$", "%1")
+                                    api_entries[functionName].returnsDetails[option] = optionDetails
+                                end
+                            end
+                        end
                         table.insert(api_entries[functionName].returns, option)
                     end
                 else
@@ -227,20 +269,35 @@ table.sort(apiKeys)
 for _,k in pairs(apiKeys) do
     local preFunction = ""
     local functionName = k
-    local argValues
+    local argValues = ""
 
     if api_entries[k].address then
-        preFunction = preFunction .. "---@url " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
+        preFunction = preFunction .. "-- " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
     end
 
-    if api_entries[k].returns_all and api_entries[k].returns_all ~= "nil" then
-        preFunction = preFunction .. "---@return " .. api_entries[k].returns_all .. "\n"
+    if api_entries[k].arguments then
+        for _, param in ipairs(api_entries[k].arguments) do
+            if argValues == "" then
+                argValues = param
+            else
+                argValues = argValues .. ", " .. param
+            end
+            local paramDocString = "-- @param  " .. param
+            if api_entries[k].argumentsDetails[param] then
+                paramDocString = paramDocString .. " - " .. api_entries[k].argumentsDetails[param]
+            end
+            preFunction = preFunction .. paramDocString:gsub("\n", "\n--           ") .. "\n"
+        end
     end
 
-    if api_entries[k].arguments_all then
-        argValues = api_entries[k].arguments_all
-    else
-        argValues = ""
+    if api_entries[k].returns then
+        for _, ret in ipairs(api_entries[k].returns) do
+            local returnDocString = "-- @return " .. ret
+            if api_entries[k].returnsDetails[ret] then
+                returnDocString = returnDocString .. " - " .. api_entries[k].returnsDetails[ret]
+            end
+            preFunction = preFunction .. returnDocString:gsub("\n", "\n--           ") .. "\n"
+        end
     end
 
     out:write(TEMPLATE:format(preFunction, functionName, argValues))
