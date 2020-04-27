@@ -50,11 +50,9 @@ end
 function AcceptXPLoss()
 end
 
----@return unknown
 function AcknowledgeSurvey()
 end
 
----@return unknown
 function ActionBindsItem()
 end
 
@@ -84,11 +82,9 @@ end
 function Ambiguate(fullName, context)
 end
 
----@return unknown
 function AntiAliasingSupported()
 end
 
----@return unknown
 function AreDangerousScriptsAllowed()
 end
 
@@ -108,7 +104,6 @@ end
 function AttemptToSaveBindings(which)
 end
 
----@return unknown
 function AutoChooseCurrentGraphicsSetting()
 end
 
@@ -116,19 +111,15 @@ end
 function AutoEquipCursorItem()
 end
 
----@return unknown
 function AutoLootMailItem()
 end
 
----@return unknown
 function BNAcceptFriendInvite()
 end
 
----@return unknown
 function BNCheckBattleTagInviteToGuildMember()
 end
 
----@return unknown
 function BNCheckBattleTagInviteToUnit()
 end
 
@@ -137,23 +128,18 @@ end
 function BNConnected()
 end
 
----@return unknown
 function BNDeclineFriendInvite()
 end
 
----@return unknown
 function BNFeaturesEnabled()
 end
 
----@return unknown
 function BNFeaturesEnabledAndConnected()
 end
 
----@return unknown
 function BNGetBlockedInfo()
 end
 
----@return unknown
 function BNGetDisplayName()
 end
 
@@ -163,7 +149,6 @@ function BNGetFOFInfo(presenceID, mutual, non_mutual, index)
 end
 
 ---@url https://wow.gamepedia.com/API_BNGetFriendGameAccountInfo
----@return unknown
 function BNGetFriendGameAccountInfo()
 end
 
@@ -173,12 +158,10 @@ function BNGetFriendIndex(presenceID)
 end
 
 ---@url https://wow.gamepedia.com/API_BNGetFriendInfo
----@return unknown
 function BNGetFriendInfo()
 end
 
 ---@url https://wow.gamepedia.com/API_BNGetFriendInfoByID
----@return unknown
 function BNGetFriendInfoByID()
 end
 
@@ -188,12 +171,10 @@ function BNGetFriendInviteInfo(inviteIndex)
 end
 
 ---@url https://wow.gamepedia.com/API_BNGetGameAccountInfo
----@return unknown
 function BNGetGameAccountInfo()
 end
 
 ---@url https://wow.gamepedia.com/API_BNGetGameAccountInfoByGUID
----@return unknown
 function BNGetGameAccountInfoByGUID()
 end
 
@@ -202,20 +183,16 @@ end
 function BNGetInfo()
 end
 
----@return unknown
 function BNGetNumBlocked()
 end
 
----@return unknown
 function BNGetNumFOF()
 end
 
 ---@url https://wow.gamepedia.com/API_BNGetNumFriendGameAccounts
----@return unknown
 function BNGetNumFriendGameAccounts()
 end
 
----@return unknown
 function BNGetNumFriendInvites()
 end
 
@@ -224,47 +201,36 @@ end
 function BNGetNumFriends()
 end
 
----@return unknown
 function BNGetSelectedBlock()
 end
 
----@return unknown
 function BNGetSelectedFriend()
 end
 
----@return unknown
 function BNInviteFriend()
 end
 
----@return unknown
 function BNIsBlocked()
 end
 
----@return unknown
 function BNIsFriend()
 end
 
----@return unknown
 function BNIsSelf()
 end
 
----@return unknown
 function BNRemoveFriend()
 end
 
----@return unknown
 function BNRequestFOFInfo()
 end
 
----@return unknown
 function BNRequestInviteFriend()
 end
 
----@return unknown
 function BNSendFriendInvite()
 end
 
----@return unknown
 function BNSendFriendInviteByID()
 end
 
@@ -272,11 +238,9 @@ end
 function BNSendGameData(presenceID, addonPrefix, message)
 end
 
----@return unknown
 function BNSendSoR()
 end
 
----@return unknown
 function BNSendVerifiedBattleTagInvite()
 end
 
@@ -288,7 +252,6 @@ end
 function BNSetAFK(bool)
 end
 
----@return unknown
 function BNSetBlocked()
 end
 
@@ -304,19 +267,15 @@ end
 function BNSetFriendNote(ID, noteText)
 end
 
----@return unknown
 function BNSetSelectedBlock()
 end
 
----@return unknown
 function BNSetSelectedFriend()
 end
 
----@return unknown
 function BNSummonFriendByIndex()
 end
 
----@return unknown
 function BNTokenFindName()
 end
 
@@ -325,7 +284,6 @@ end
 function BankButtonIDToInvSlotID(buttonID, isBag)
 end
 
----@return unknown
 function BattlefieldSetPendingReportTarget()
 end
 
@@ -362,11 +320,9 @@ end
 function BuybackItem(slot)
 end
 
----@return unknown
 function CalculateAuctionDeposit()
 end
 
----@return unknown
 function CalculateStringEditDistance()
 end
 
@@ -391,7 +347,6 @@ end
 function CanAbandonQuest(questID)
 end
 
----@return unknown
 function CanAffordMerchantItem()
 end
 
@@ -400,23 +355,18 @@ end
 function CanBeRaidTarget(unit)
 end
 
----@return unknown
 function CanCancelAuction()
 end
 
----@return unknown
 function CanCancelScene()
 end
 
----@return unknown
 function CanComplainInboxItem()
 end
 
----@return unknown
 function CanDualWield()
 end
 
----@return unknown
 function CanEditGuildInfo()
 end
 
@@ -430,7 +380,6 @@ end
 function CanEditOfficerNote()
 end
 
----@return unknown
 function CanEditPublicNote()
 end
 
@@ -454,11 +403,9 @@ end
 function CanGuildPromote()
 end
 
----@return unknown
 function CanGuildRemove()
 end
 
----@return unknown
 function CanHearthAndResurrectFromArea()
 end
 
@@ -472,7 +419,6 @@ end
 function CanJoinBattlefieldAsGroup()
 end
 
----@return unknown
 function CanLootUnit()
 end
 
@@ -486,7 +432,6 @@ end
 function CanReplaceGuildMaster()
 end
 
----@return unknown
 function CanResetTutorials()
 end
 
@@ -495,7 +440,6 @@ end
 function CanSendAuctionQuery()
 end
 
----@return unknown
 function CanSendSoRByText()
 end
 
@@ -504,7 +448,6 @@ end
 function CanShowResetInstances()
 end
 
----@return unknown
 function CanSignPetition()
 end
 
@@ -527,7 +470,6 @@ end
 function CancelAreaSpiritHeal()
 end
 
----@return unknown
 function CancelAuction()
 end
 
@@ -535,7 +477,6 @@ end
 function CancelDuel()
 end
 
----@return unknown
 function CancelEmote()
 end
 
@@ -551,15 +492,12 @@ end
 function CancelPendingEquip(slot)
 end
 
----@return unknown
 function CancelPetPossess()
 end
 
----@return unknown
 function CancelPreloadingMovie()
 end
 
----@return unknown
 function CancelScene()
 end
 
@@ -571,7 +509,6 @@ end
 function CancelShapeshiftForm()
 end
 
----@return unknown
 function CancelSpellByName()
 end
 
@@ -583,7 +520,6 @@ end
 function CancelTrade()
 end
 
----@return unknown
 function CancelTradeAccept()
 end
 
@@ -591,11 +527,9 @@ end
 function CancelUnitBuff(unit, buffIndex_or_spell ,filter_or_rank)
 end
 
----@return unknown
 function CannotBeResurrected()
 end
 
----@return unknown
 function CaseAccentInsensitiveParse()
 end
 
@@ -611,7 +545,6 @@ end
 function CastSpell(spellIndex, spellbookType)
 end
 
----@return unknown
 function CastSpellByID()
 end
 
@@ -653,11 +586,9 @@ end
 function ChannelModerator(channelName, playerName)
 end
 
----@return unknown
 function ChannelSetAllSilent()
 end
 
----@return unknown
 function ChannelSetPartyMemberSilent()
 end
 
@@ -673,7 +604,6 @@ end
 function ChannelUnmoderator(channelName, playerName)
 end
 
----@return unknown
 function CheckBinderDist()
 end
 
@@ -686,15 +616,12 @@ end
 function CheckInteractDistance(unit, distIndex)
 end
 
----@return unknown
 function CheckSpiritHealerDist()
 end
 
----@return unknown
 function CheckTalentMasterDist()
 end
 
----@return unknown
 function ClearBattlemaster()
 end
 
@@ -702,7 +629,6 @@ end
 function ClearCursor()
 end
 
----@return unknown
 function ClearInspectPlayer()
 end
 
@@ -710,7 +636,6 @@ end
 function ClearOverrideBindings(owner)
 end
 
----@return unknown
 function ClearPartyAssignment()
 end
 
@@ -722,12 +647,10 @@ end
 function ClearTarget()
 end
 
----@return unknown
 function ClearTutorials()
 end
 
 ---@url https://wow.gamepedia.com/API_ClickAuctionSellItemButton
----@return unknown
 function ClickAuctionSellItemButton()
 end
 
@@ -739,11 +662,9 @@ end
 function ClickStablePet(index)
 end
 
----@return unknown
 function ClickTargetTradeButton()
 end
 
----@return unknown
 function ClickTradeButton()
 end
 
@@ -755,7 +676,6 @@ end
 function CloseBankFrame()
 end
 
----@return unknown
 function CloseCraft()
 end
 
@@ -763,11 +683,9 @@ end
 function CloseGossip()
 end
 
----@return unknown
 function CloseGuildRegistrar()
 end
 
----@return unknown
 function CloseGuildRoster()
 end
 
@@ -795,11 +713,9 @@ end
 function ClosePetition()
 end
 
----@return unknown
 function CloseQuest()
 end
 
----@return unknown
 function CloseTabardCreation()
 end
 
@@ -819,7 +735,6 @@ end
 function CloseTrainer()
 end
 
----@return unknown
 function ClosestGameObjectPosition()
 end
 
@@ -828,11 +743,9 @@ end
 function ClosestUnitPosition(creatureID)
 end
 
----@return unknown
 function CollapseAllFactionHeaders()
 end
 
----@return unknown
 function CollapseCraftSkillLine()
 end
 
@@ -848,7 +761,6 @@ end
 function CollapseSkillHeader(index)
 end
 
----@return unknown
 function CollapseTradeSkillSubClass()
 end
 
@@ -856,19 +768,15 @@ end
 function CollapseTrainerSkillLine(index)
 end
 
----@return unknown
 function CombatLogAddFilter()
 end
 
----@return unknown
 function CombatLogAdvanceEntry()
 end
 
----@return unknown
 function CombatLogClearEntries()
 end
 
----@return unknown
 function CombatLogGetCurrentEntry()
 end
 
@@ -877,27 +785,21 @@ end
 function CombatLogGetCurrentEventInfo()
 end
 
----@return unknown
 function CombatLogGetNumEntries()
 end
 
----@return unknown
 function CombatLogGetRetentionTime()
 end
 
----@return unknown
 function CombatLogResetFilter()
 end
 
----@return unknown
 function CombatLogSetCurrentEntry()
 end
 
----@return unknown
 function CombatLogSetRetentionTime()
 end
 
----@return unknown
 function CombatLog_Object_IsA()
 end
 
@@ -905,7 +807,6 @@ end
 function CombatTextSetActiveUnit(unit)
 end
 
----@return unknown
 function ComplainInboxItem()
 end
 
@@ -921,7 +822,6 @@ end
 function ConfirmBindOnUse()
 end
 
----@return unknown
 function ConfirmBinder()
 end
 
@@ -933,11 +833,9 @@ end
 function ConfirmLootSlot(slot)
 end
 
----@return unknown
 function ConfirmNoRefundOnUse()
 end
 
----@return unknown
 function ConfirmOnUse()
 end
 
@@ -949,11 +847,9 @@ end
 function ConfirmReadyCheck(isReady)
 end
 
----@return unknown
 function ConfirmTalentWipe()
 end
 
----@return unknown
 function ConsoleAddMessage()
 end
 
@@ -966,7 +862,6 @@ end
 function ContainerIDToInventoryID(containerID)
 end
 
----@return unknown
 function ContainerRefundItemPurchase()
 end
 
@@ -978,7 +873,6 @@ end
 function ConvertToRaid()
 end
 
----@return unknown
 function CopyToClipboard()
 end
 
@@ -997,7 +891,6 @@ end
 function CreateMacro(name, iconFileID , body, perCharacter)
 end
 
----@return unknown
 function CreateNewRaidProfile()
 end
 
@@ -1011,15 +904,12 @@ end
 function CursorHasItem()
 end
 
----@return unknown
 function CursorHasMacro()
 end
 
----@return unknown
 function CursorHasMoney()
 end
 
----@return unknown
 function CursorHasSpell()
 end
 
@@ -1037,7 +927,6 @@ end
 function DeclineChannelInvite(channel)
 end
 
----@return unknown
 function DeclineGroup()
 end
 
@@ -1049,7 +938,6 @@ end
 function DeclineLevelGrant()
 end
 
----@return unknown
 function DeclineName()
 end
 
@@ -1069,7 +957,6 @@ end
 function DeleteCursorItem()
 end
 
----@return unknown
 function DeleteGMTicket()
 end
 
@@ -1077,15 +964,12 @@ end
 function DeleteInboxItem(index)
 end
 
----@return unknown
 function DeleteMacro()
 end
 
----@return unknown
 function DeleteRaidProfile()
 end
 
----@return unknown
 function DemoteAssistant()
 end
 
@@ -1093,7 +977,6 @@ end
 function DescendStop()
 end
 
----@return unknown
 function DetectWowMouse()
 end
 
@@ -1105,7 +988,6 @@ end
 function DisableAllAddOns()
 end
 
----@return unknown
 function DisableSpellAutocast()
 end
 
@@ -1117,7 +999,6 @@ end
 function DisplayChannelOwner(channelName)
 end
 
----@return unknown
 function DoCraft()
 end
 
@@ -1130,7 +1011,6 @@ function DoReadyCheck()
 end
 
 ---@url https://wow.gamepedia.com/API_DoTradeSkill
----@return unknown
 function DoTradeSkill()
 end
 
@@ -1144,7 +1024,6 @@ end
 function DoesSpellExist(spellName)
 end
 
----@return unknown
 function DoesTemplateExist()
 end
 
@@ -1168,15 +1047,12 @@ end
 function EnableAllAddOns()
 end
 
----@return unknown
 function EnableSpellAutocast()
 end
 
----@return unknown
 function EndBoundTradeable()
 end
 
----@return unknown
 function EndRefund()
 end
 
@@ -1202,11 +1078,9 @@ end
 function EquipPendingItem(invSlot)
 end
 
----@return unknown
 function ExpandAllFactionHeaders()
 end
 
----@return unknown
 function ExpandCraftSkillLine()
 end
 
@@ -1243,7 +1117,6 @@ end
 function FindBaseSpellByID(spellID)
 end
 
----@return unknown
 function FindSpellBookSlotBySpellID()
 end
 
@@ -1252,11 +1125,9 @@ end
 function FindSpellOverrideByID(spellID)
 end
 
----@return unknown
 function FlagTutorial()
 end
 
----@return unknown
 function FlashClientIcon()
 end
 
@@ -1274,7 +1145,6 @@ function ForceGossip()
 end
 
 ---@url https://wow.gamepedia.com/API_ForceLogout
----@return unknown
 function ForceLogout()
 end
 
@@ -1282,43 +1152,33 @@ end
 function ForceQuit()
 end
 
----@return unknown
 function ForfeitDuel()
 end
 
----@return unknown
 function FrameXML_Debug()
 end
 
----@return unknown
 function GMEuropaBugsEnabled()
 end
 
----@return unknown
 function GMEuropaComplaintsEnabled()
 end
 
----@return unknown
 function GMEuropaSuggestionsEnabled()
 end
 
----@return unknown
 function GMEuropaTicketsEnabled()
 end
 
----@return unknown
 function GMItemRestorationButtonEnabled()
 end
 
----@return unknown
 function GMQuickTicketSystemEnabled()
 end
 
----@return unknown
 function GMQuickTicketSystemThrottled()
 end
 
----@return unknown
 function GMReportLag()
 end
 
@@ -1326,48 +1186,37 @@ end
 function GMRequestPlayerInfo()
 end
 
----@return unknown
 function GMResponseResolve()
 end
 
----@return unknown
 function GMSubmitBug()
 end
 
----@return unknown
 function GMSubmitSuggestion()
 end
 
----@return unknown
 function GMSurveyAnswer()
 end
 
----@return unknown
 function GMSurveyAnswerSubmit()
 end
 
----@return unknown
 function GMSurveyCommentSubmit()
 end
 
----@return unknown
 function GMSurveyNumAnswers()
 end
 
 ---@url https://wow.gamepedia.com/API_GMSurveyQuestion
----@return unknown
 function GMSurveyQuestion()
 end
 
----@return unknown
 function GMSurveySubmit()
 end
 
----@return unknown
 function GameMovieFinished()
 end
 
----@return unknown
 function GetAbandonQuestItems()
 end
 
@@ -1381,7 +1230,6 @@ end
 function GetAccountExpansionLevel()
 end
 
----@return unknown
 function GetActionAutocast()
 end
 
@@ -1396,7 +1244,6 @@ function GetActionBarToggles()
 end
 
 ---@url https://wow.gamepedia.com/API_GetActionCharges
----@return unknown
 function GetActionCharges()
 end
 
@@ -1430,15 +1277,12 @@ end
 function GetActionTexture(actionSlot)
 end
 
----@return unknown
 function GetActiveLevel()
 end
 
----@return unknown
 function GetActiveLootRollIDs()
 end
 
----@return unknown
 function GetActiveTitle()
 end
 
@@ -1462,7 +1306,6 @@ end
 function GetAddOnInfo(index_or_name)
 end
 
----@return unknown
 function GetAddOnMemoryUsage()
 end
 
@@ -1471,15 +1314,12 @@ end
 function GetAddOnMetadata(addon, field)
 end
 
----@return unknown
 function GetAddOnOptionalDependencies()
 end
 
----@return unknown
 function GetAllowLowLevelRaid()
 end
 
----@return unknown
 function GetAlternativeDefaultLanguage()
 end
 
@@ -1498,11 +1338,9 @@ end
 function GetAttackPowerForStat(statId, amount)
 end
 
----@return unknown
 function GetAuctionDeposit()
 end
 
----@return unknown
 function GetAuctionHouseDepositRate()
 end
 
@@ -1532,15 +1370,12 @@ function GetAuctionItemTimeLeft(type, index)
 end
 
 ---@url https://wow.gamepedia.com/API_GetAuctionSellItemInfo
----@return unknown
 function GetAuctionSellItemInfo()
 end
 
----@return unknown
 function GetAuctionSort()
 end
 
----@return unknown
 function GetAutoCompletePresenceID()
 end
 
@@ -1559,11 +1394,9 @@ end
 function GetAutoDeclineGuildInvites()
 end
 
----@return unknown
 function GetAvailableBandwidth()
 end
 
----@return unknown
 function GetAvailableLevel()
 end
 
@@ -1572,11 +1405,9 @@ end
 function GetAvailableLocales(ignoreLocalRestrictions)
 end
 
----@return unknown
 function GetAvailableTitle()
 end
 
----@return unknown
 function GetBackgroundLoadingStatus()
 end
 
@@ -1585,11 +1416,9 @@ end
 function GetBagName(index)
 end
 
----@return unknown
 function GetBagSlotFlag()
 end
 
----@return unknown
 function GetBankBagSlotFlag()
 end
 
@@ -1623,7 +1452,6 @@ end
 function GetBattlefieldInstanceRunTime()
 end
 
----@return unknown
 function GetBattlefieldMapIconScale()
 end
 
@@ -1677,7 +1505,6 @@ end
 function GetBattlegroundPoints(team)
 end
 
----@return unknown
 function GetBidderAuctionItems()
 end
 
@@ -1717,11 +1544,9 @@ function GetBindingText(key,prefix,abbreviate)
 end
 
 ---@url https://wow.gamepedia.com/API_GetBlockChance
----@return unknown
 function GetBlockChance()
 end
 
----@return unknown
 function GetBonusBarIndex()
 end
 
@@ -1740,7 +1565,6 @@ end
 function GetBuybackItemInfo(slotIndex)
 end
 
----@return unknown
 function GetBuybackItemLink()
 end
 
@@ -1769,11 +1593,9 @@ end
 function GetCVarInfo(name)
 end
 
----@return unknown
 function GetCVarSettingValidity()
 end
 
----@return unknown
 function GetCallPetSpellInfo()
 end
 
@@ -1782,7 +1604,6 @@ end
 function GetCameraZoom()
 end
 
----@return unknown
 function GetCemeteryPreference()
 end
 
@@ -1821,15 +1642,12 @@ end
 function GetChatWindowMessages(index)
 end
 
----@return unknown
 function GetChatWindowSavedDimensions()
 end
 
----@return unknown
 function GetChatWindowSavedPosition()
 end
 
----@return unknown
 function GetClickFrame()
 end
 
@@ -1897,11 +1715,9 @@ end
 function GetContainerItemLink(bagID, slotIndex)
 end
 
----@return unknown
 function GetContainerItemPurchaseInfo()
 end
 
----@return unknown
 function GetContainerItemPurchaseItem()
 end
 
@@ -1915,11 +1731,9 @@ end
 function GetContainerNumSlots(bagID)
 end
 
----@return unknown
 function GetCorpseRecoveryDelay()
 end
 
----@return unknown
 function GetCraftButtonToken()
 end
 
@@ -1933,7 +1747,6 @@ end
 function GetCraftDisplaySkillLine()
 end
 
----@return unknown
 function GetCraftIcon()
 end
 
@@ -1967,7 +1780,6 @@ end
 function GetCraftReagentItemLink(index, n)
 end
 
----@return unknown
 function GetCraftSelectionIndex()
 end
 
@@ -1986,7 +1798,6 @@ end
 function GetCritChance()
 end
 
----@return unknown
 function GetCriteriaSpell()
 end
 
@@ -1995,19 +1806,15 @@ end
 function GetCurrentBindingSet()
 end
 
----@return unknown
 function GetCurrentCombatTextEventInfo()
 end
 
----@return unknown
 function GetCurrentEventID()
 end
 
----@return unknown
 function GetCurrentGraphicsSetting()
 end
 
----@return unknown
 function GetCurrentKeyBoardFocus()
 end
 
@@ -2016,7 +1823,6 @@ end
 function GetCurrentRegion()
 end
 
----@return unknown
 function GetCurrentRegionName()
 end
 
@@ -2025,11 +1831,9 @@ end
 function GetCurrentResolution()
 end
 
----@return unknown
 function GetCurrentScaledResolution()
 end
 
----@return unknown
 function GetCursorDelta()
 end
 
@@ -2053,7 +1857,6 @@ end
 function GetDeathRecapLink(recapID)
 end
 
----@return unknown
 function GetDefaultGraphicsQuality()
 end
 
@@ -2062,19 +1865,15 @@ end
 function GetDefaultLanguage(unit)
 end
 
----@return unknown
 function GetDefaultVideoOption()
 end
 
----@return unknown
 function GetDefaultVideoOptions()
 end
 
----@return unknown
 function GetDefaultVideoQualityOption()
 end
 
----@return unknown
 function GetDemotionRank()
 end
 
@@ -2084,27 +1883,21 @@ function GetDetailedItemLevelInfo(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
 ---@url https://wow.gamepedia.com/API_GetDodgeChance
----@return unknown
 function GetDodgeChance()
 end
 
----@return unknown
 function GetDodgeChanceFromAttribute()
 end
 
----@return unknown
 function GetDownloadedPercentage()
 end
 
----@return unknown
 function GetDungeonInfo()
 end
 
----@return unknown
 function GetEventCPUUsage()
 end
 
----@return unknown
 function GetEventTime()
 end
 
@@ -2129,7 +1922,6 @@ function GetFactionInfo(factionIndex)
 end
 
 ---@url https://wow.gamepedia.com/API_GetFactionInfoByID
----@return unknown
 function GetFactionInfoByID()
 end
 
@@ -2138,7 +1930,6 @@ end
 function GetFileIDFromPath(filePath)
 end
 
----@return unknown
 function GetFileStreamingStatus()
 end
 
@@ -2147,11 +1938,9 @@ end
 function GetFirstTradeSkill()
 end
 
----@return unknown
 function GetFontInfo()
 end
 
----@return unknown
 function GetFonts()
 end
 
@@ -2170,19 +1959,15 @@ end
 function GetFramesRegisteredForEvent(event)
 end
 
----@return unknown
 function GetFunctionCPUUsage()
 end
 
----@return unknown
 function GetGMStatus()
 end
 
----@return unknown
 function GetGMTicket()
 end
 
----@return unknown
 function GetGameMessageInfo()
 end
 
@@ -2216,23 +2001,18 @@ end
 function GetGraphicsAPIs()
 end
 
----@return unknown
 function GetGraphicsDropdownIndexByMasterIndex()
 end
 
----@return unknown
 function GetGreetingText()
 end
 
----@return unknown
 function GetGroupMemberCounts()
 end
 
----@return unknown
 function GetGuildCharterCost()
 end
 
----@return unknown
 function GetGuildFactionGroup()
 end
 
@@ -2241,15 +2021,12 @@ end
 function GetGuildInfo(unit)
 end
 
----@return unknown
 function GetGuildInfoText()
 end
 
----@return unknown
 function GetGuildLogoInfo()
 end
 
----@return unknown
 function GetGuildRenameRequired()
 end
 
@@ -2279,11 +2056,9 @@ function GetGuildRosterShowOffline()
 end
 
 ---@url https://wow.gamepedia.com/API_GetGuildTabardFileNames
----@return unknown
 function GetGuildTabardFileNames()
 end
 
----@return unknown
 function GetHaste()
 end
 
@@ -2327,7 +2102,6 @@ end
 function GetInboxText(index)
 end
 
----@return unknown
 function GetInsertItemsLeftToRight()
 end
 
@@ -2341,7 +2115,6 @@ end
 function GetInspectPVPRankProgress()
 end
 
----@return unknown
 function GetInstanceBootTimeRemaining()
 end
 
@@ -2375,7 +2148,6 @@ end
 function GetInventoryItemDurability(slot)
 end
 
----@return unknown
 function GetInventoryItemEquippedUnusable()
 end
 
@@ -2399,7 +2171,6 @@ end
 function GetInventoryItemTexture(unit, slotId)
 end
 
----@return unknown
 function GetInventoryItemsForSlot()
 end
 
@@ -2433,7 +2204,6 @@ end
 function GetItemCount(itemID_or_itemName_or_itemLink , includeBank, includeCharges)
 end
 
----@return unknown
 function GetItemCreationContext()
 end
 
@@ -2457,7 +2227,6 @@ end
 function GetItemInfoInstant(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
----@return unknown
 function GetItemInventorySlotInfo()
 end
 
@@ -2466,7 +2235,6 @@ end
 function GetItemQualityColor(quality)
 end
 
----@return unknown
 function GetItemSetInfo()
 end
 
@@ -2475,7 +2243,6 @@ end
 function GetItemSpell(itemID_or_itemString_or_itemName_or_itemLink)
 end
 
----@return unknown
 function GetItemStatDelta()
 end
 
@@ -2489,7 +2256,6 @@ end
 function GetItemSubClassInfo(classID, subClassID)
 end
 
----@return unknown
 function GetItemUniqueness()
 end
 
@@ -2503,7 +2269,6 @@ end
 function GetLatestThreeSenders()
 end
 
----@return unknown
 function GetLocalGameTime()
 end
 
@@ -2512,11 +2277,9 @@ end
 function GetLocale()
 end
 
----@return unknown
 function GetLooseMacroIcons()
 end
 
----@return unknown
 function GetLooseMacroItemIcons()
 end
 
@@ -2540,7 +2303,6 @@ end
 function GetLootRollItemLink(id)
 end
 
----@return unknown
 function GetLootRollTimeLeft()
 end
 
@@ -2574,7 +2336,6 @@ end
 function GetMacroBody(macroIndex_or_name)
 end
 
----@return unknown
 function GetMacroIcons()
 end
 
@@ -2588,11 +2349,9 @@ end
 function GetMacroInfo(name_or_macroSlot)
 end
 
----@return unknown
 function GetMacroItem()
 end
 
----@return unknown
 function GetMacroItemIcons()
 end
 
@@ -2621,19 +2380,15 @@ end
 function GetMaxLevelForExpansionLevel(expansionLevel , useModernLevelMapping)
 end
 
----@return unknown
 function GetMaxNumCUFProfiles()
 end
 
----@return unknown
 function GetMaxPlayerLevel()
 end
 
----@return unknown
 function GetMaxRenderScale()
 end
 
----@return unknown
 function GetMaxSpellStartRecoveryOffset()
 end
 
@@ -2642,7 +2397,6 @@ end
 function GetMaximumExpansionLevel()
 end
 
----@return unknown
 function GetMeleeHaste()
 end
 
@@ -2656,7 +2410,6 @@ end
 function GetMerchantItemCostItem(index, itemIndex)
 end
 
----@return unknown
 function GetMerchantItemID()
 end
 
@@ -2680,7 +2433,6 @@ end
 function GetMerchantNumItems()
 end
 
----@return unknown
 function GetMinRenderScale()
 end
 
@@ -2709,7 +2461,6 @@ end
 function GetModifiedClick(action)
 end
 
----@return unknown
 function GetModifiedClickAction()
 end
 
@@ -2718,15 +2469,12 @@ end
 function GetMoney()
 end
 
----@return unknown
 function GetMonitorAspectRatio()
 end
 
----@return unknown
 function GetMonitorCount()
 end
 
----@return unknown
 function GetMonitorName()
 end
 
@@ -2735,11 +2483,9 @@ end
 function GetMouseButtonClicked()
 end
 
----@return unknown
 function GetMouseButtonName()
 end
 
----@return unknown
 function GetMouseClickFocus()
 end
 
@@ -2748,19 +2494,15 @@ end
 function GetMouseFocus()
 end
 
----@return unknown
 function GetMouseMotionFocus()
 end
 
----@return unknown
 function GetMovieDownloadProgress()
 end
 
----@return unknown
 function GetMultiCastBarIndex()
 end
 
----@return unknown
 function GetNetIpTypes()
 end
 
@@ -2769,11 +2511,9 @@ end
 function GetNetStats()
 end
 
----@return unknown
 function GetNextCompleatedTutorial()
 end
 
----@return unknown
 function GetNextPendingInviteConfirmation()
 end
 
@@ -2787,7 +2527,6 @@ end
 function GetNormalizedRealmName()
 end
 
----@return unknown
 function GetNumActiveQuests()
 end
 
@@ -2801,7 +2540,6 @@ end
 function GetNumAuctionItems(list)
 end
 
----@return unknown
 function GetNumAvailableQuests()
 end
 
@@ -2810,7 +2548,6 @@ end
 function GetNumBankSlots()
 end
 
----@return unknown
 function GetNumBattlefieldFlagPositions()
 end
 
@@ -2834,11 +2571,9 @@ end
 function GetNumBindings()
 end
 
----@return unknown
 function GetNumBuybackItems()
 end
 
----@return unknown
 function GetNumChannelMembers()
 end
 
@@ -2847,7 +2582,6 @@ end
 function GetNumCrafts()
 end
 
----@return unknown
 function GetNumDeclensionSets()
 end
 
@@ -2866,7 +2600,6 @@ end
 function GetNumFactions()
 end
 
----@return unknown
 function GetNumFrames()
 end
 
@@ -2885,7 +2618,6 @@ end
 function GetNumGossipOptions()
 end
 
----@return unknown
 function GetNumGroupChannels()
 end
 
@@ -2914,11 +2646,9 @@ end
 function GetNumMacros()
 end
 
----@return unknown
 function GetNumMembersInRank()
 end
 
----@return unknown
 function GetNumModifiedClickActions()
 end
 
@@ -2927,7 +2657,6 @@ end
 function GetNumPetitionNames()
 end
 
----@return unknown
 function GetNumPrimaryProfessions()
 end
 
@@ -2936,7 +2665,6 @@ end
 function GetNumQuestChoices()
 end
 
----@return unknown
 function GetNumQuestItemDrops()
 end
 
@@ -2960,7 +2688,6 @@ end
 function GetNumQuestLogEntries()
 end
 
----@return unknown
 function GetNumQuestLogRewardSpells()
 end
 
@@ -2974,19 +2701,15 @@ end
 function GetNumQuestRewards()
 end
 
----@return unknown
 function GetNumQuestWatches()
 end
 
----@return unknown
 function GetNumRaidProfiles()
 end
 
----@return unknown
 function GetNumRewardSpells()
 end
 
----@return unknown
 function GetNumRoutes()
 end
 
@@ -2996,7 +2719,6 @@ function GetNumSavedInstances()
 end
 
 ---@url https://wow.gamepedia.com/API_GetNumShapeshiftForms
----@return unknown
 function GetNumShapeshiftForms()
 end
 
@@ -3005,7 +2727,6 @@ end
 function GetNumSkillLines()
 end
 
----@return unknown
 function GetNumSoRRemaining()
 end
 
@@ -3049,7 +2770,6 @@ end
 function GetNumTrainerServices()
 end
 
----@return unknown
 function GetOSLocale()
 end
 
@@ -3058,7 +2778,6 @@ end
 function GetObjectIconTextureCoords(objectIcon)
 end
 
----@return unknown
 function GetObjectiveText()
 end
 
@@ -3068,11 +2787,9 @@ function GetOptOutOfLoot()
 end
 
 ---@url https://wow.gamepedia.com/API_GetOwnerAuctionItems
----@return unknown
 function GetOwnerAuctionItems()
 end
 
----@return unknown
 function GetPOITextureCoords()
 end
 
@@ -3122,11 +2839,9 @@ function GetPVPYesterdayStats()
 end
 
 ---@url https://wow.gamepedia.com/API_GetParryChance
----@return unknown
 function GetParryChance()
 end
 
----@return unknown
 function GetParryChanceFromAttribute()
 end
 
@@ -3135,7 +2850,6 @@ end
 function GetPartyAssignment(assignment ,raidmember, exactMatch)
 end
 
----@return unknown
 function GetPendingInviteConfirmations()
 end
 
@@ -3149,11 +2863,9 @@ end
 function GetPetActionInfo(index)
 end
 
----@return unknown
 function GetPetActionSlotUsable()
 end
 
----@return unknown
 function GetPetActionsUsable()
 end
 
@@ -3172,7 +2884,6 @@ end
 function GetPetHappiness()
 end
 
----@return unknown
 function GetPetIcon()
 end
 
@@ -3181,15 +2892,12 @@ end
 function GetPetLoyalty()
 end
 
----@return unknown
 function GetPetMeleeHaste()
 end
 
----@return unknown
 function GetPetSpellBonusDamage()
 end
 
----@return unknown
 function GetPetTimeRemaining()
 end
 
@@ -3203,7 +2911,6 @@ end
 function GetPetitionInfo()
 end
 
----@return unknown
 function GetPetitionNameInfo()
 end
 
@@ -3232,15 +2939,12 @@ end
 function GetPossessInfo(index)
 end
 
----@return unknown
 function GetPowerRegen()
 end
 
----@return unknown
 function GetPowerRegenForPowerType()
 end
 
----@return unknown
 function GetPrevCompleatedTutorial()
 end
 
@@ -3254,7 +2958,6 @@ end
 function GetProgressText()
 end
 
----@return unknown
 function GetPromotionRank()
 end
 
@@ -3263,7 +2966,6 @@ end
 function GetQuestBackgroundMaterial()
 end
 
----@return unknown
 function GetQuestFactionGroup()
 end
 
@@ -3307,7 +3009,6 @@ end
 function GetQuestLogIndexByID(questID)
 end
 
----@return unknown
 function GetQuestLogItemDrop()
 end
 
@@ -3331,11 +3032,9 @@ end
 function GetQuestLogQuestText()
 end
 
----@return unknown
 function GetQuestLogQuestType()
 end
 
----@return unknown
 function GetQuestLogRequiredMoney()
 end
 
@@ -3359,7 +3058,6 @@ end
 function GetQuestLogSelection()
 end
 
----@return unknown
 function GetQuestLogSpellLink()
 end
 
@@ -3373,15 +3071,12 @@ end
 function GetQuestLogTitle(questLogIndex)
 end
 
----@return unknown
 function GetQuestMoneyToGet()
 end
 
----@return unknown
 function GetQuestPortraitGiver()
 end
 
----@return unknown
 function GetQuestPortraitTurnIn()
 end
 
@@ -3389,7 +3084,6 @@ end
 function GetQuestReward(itemChoice)
 end
 
----@return unknown
 function GetQuestSpellLink()
 end
 
@@ -3398,7 +3092,6 @@ end
 function GetQuestTagInfo(questID)
 end
 
----@return unknown
 function GetQuestText()
 end
 
@@ -3407,11 +3100,9 @@ end
 function GetQuestTimers()
 end
 
----@return unknown
 function GetQuestWatchIndex()
 end
 
----@return unknown
 function GetQuestWatchInfo()
 end
 
@@ -3420,19 +3111,15 @@ end
 function GetQuestsCompleted(table)
 end
 
----@return unknown
 function GetRaidProfileFlattenedOptions()
 end
 
----@return unknown
 function GetRaidProfileName()
 end
 
----@return unknown
 function GetRaidProfileOption()
 end
 
----@return unknown
 function GetRaidProfileSavedPosition()
 end
 
@@ -3451,15 +3138,12 @@ end
 function GetRangedCritChance()
 end
 
----@return unknown
 function GetRangedHaste()
 end
 
----@return unknown
 function GetReadyCheckStatus()
 end
 
----@return unknown
 function GetReadyCheckTimeLeft()
 end
 
@@ -3478,7 +3162,6 @@ end
 function GetRealmName()
 end
 
----@return unknown
 function GetReleaseTimeRemaining()
 end
 
@@ -3487,7 +3170,6 @@ end
 function GetRepairAllCost()
 end
 
----@return unknown
 function GetResSicknessDuration()
 end
 
@@ -3496,11 +3178,9 @@ end
 function GetRestState()
 end
 
----@return unknown
 function GetRestrictedAccountData()
 end
 
----@return unknown
 function GetRewardMoney()
 end
 
@@ -3519,11 +3199,9 @@ end
 function GetRewardXP()
 end
 
----@return unknown
 function GetRunningMacro()
 end
 
----@return unknown
 function GetRunningMacroButton()
 end
 
@@ -3547,7 +3225,6 @@ end
 function GetSchoolString(schoolMask)
 end
 
----@return unknown
 function GetScreenDPIScale()
 end
 
@@ -3566,15 +3243,12 @@ end
 function GetScreenWidth()
 end
 
----@return unknown
 function GetScriptCPUUsage()
 end
 
----@return unknown
 function GetSecondsUntilParentalControlsKick()
 end
 
----@return unknown
 function GetSelectedAuctionItem()
 end
 
@@ -3583,11 +3257,9 @@ end
 function GetSelectedBattlefield()
 end
 
----@return unknown
 function GetSelectedDisplayChannel()
 end
 
----@return unknown
 function GetSelectedFaction()
 end
 
@@ -3602,7 +3274,6 @@ function GetSelectedStablePet()
 end
 
 ---@url https://wow.gamepedia.com/API_GetSendMailCOD
----@return unknown
 function GetSendMailCOD()
 end
 
@@ -3616,7 +3287,6 @@ end
 function GetSendMailItemLink(attachment)
 end
 
----@return unknown
 function GetSendMailMoney()
 end
 
@@ -3630,7 +3300,6 @@ end
 function GetServerTime()
 end
 
----@return unknown
 function GetSessionTime()
 end
 
@@ -3709,7 +3378,6 @@ end
 function GetSpellCharges(spellId_or_spellName)
 end
 
----@return unknown
 function GetSpellConfirmationPromptsInfo()
 end
 
@@ -3718,7 +3386,6 @@ end
 function GetSpellCooldown(spellName_or_spellID_or_slotID, bookType)
 end
 
----@return unknown
 function GetSpellCount()
 end
 
@@ -3752,7 +3419,6 @@ end
 function GetSpellLossOfControlCooldown(spellSlot, bookType_or_spellName_or_spellID)
 end
 
----@return unknown
 function GetSpellPenetration()
 end
 
@@ -3761,15 +3427,12 @@ end
 function GetSpellPowerCost(spellName_or_spellID)
 end
 
----@return unknown
 function GetSpellQueueWindow()
 end
 
----@return unknown
 function GetSpellRank()
 end
 
----@return unknown
 function GetSpellSubtext()
 end
 
@@ -3783,7 +3446,6 @@ end
 function GetSpellTexture(spellId_or_spellName)
 end
 
----@return unknown
 function GetSpellTradeSkillLink()
 end
 
@@ -3807,15 +3469,12 @@ end
 function GetSummonFriendCooldown()
 end
 
----@return unknown
 function GetSuperTrackedQuestID()
 end
 
----@return unknown
 function GetTabardCreationCost()
 end
 
----@return unknown
 function GetTabardInfo()
 end
 
@@ -3839,15 +3498,12 @@ end
 function GetTargetTradeMoney()
 end
 
----@return unknown
 function GetTaxiBenchmarkMode()
 end
 
----@return unknown
 function GetTaxiMapID()
 end
 
----@return unknown
 function GetTempShapeshiftBarIndex()
 end
 
@@ -3856,7 +3512,6 @@ end
 function GetText(token , gender, ordinal)
 end
 
----@return unknown
 function GetTickTime()
 end
 
@@ -3865,11 +3520,9 @@ end
 function GetTime()
 end
 
----@return unknown
 function GetTimePreciseSec()
 end
 
----@return unknown
 function GetTimeToWellRested()
 end
 
@@ -3878,7 +3531,6 @@ end
 function GetTitleText()
 end
 
----@return unknown
 function GetToolTipInfo()
 end
 
@@ -3887,7 +3539,6 @@ end
 function GetTrackingTexture()
 end
 
----@return unknown
 function GetTradePlayerItemInfo()
 end
 
@@ -3896,11 +3547,9 @@ end
 function GetTradePlayerItemLink(i)
 end
 
----@return unknown
 function GetTradeSkillCooldown()
 end
 
----@return unknown
 function GetTradeSkillIcon()
 end
 
@@ -3910,7 +3559,6 @@ function GetTradeSkillInfo(skillIndex)
 end
 
 ---@url https://wow.gamepedia.com/API_GetTradeSkillInvSlotFilter
----@return unknown
 function GetTradeSkillInvSlotFilter()
 end
 
@@ -3935,7 +3583,6 @@ function GetTradeSkillLine()
 end
 
 ---@url https://wow.gamepedia.com/API_GetTradeSkillNumMade
----@return unknown
 function GetTradeSkillNumMade()
 end
 
@@ -3970,7 +3617,6 @@ function GetTradeSkillSubClasses()
 end
 
 ---@url https://wow.gamepedia.com/API_GetTradeSkillTools
----@return unknown
 function GetTradeSkillTools()
 end
 
@@ -3980,12 +3626,10 @@ function GetTradeTargetItemInfo(index)
 end
 
 ---@url https://wow.gamepedia.com/API_GetTradeTargetItemLink
----@return unknown
 function GetTradeTargetItemLink()
 end
 
 ---@url https://wow.gamepedia.com/API_GetTradeskillRepeatCount
----@return unknown
 function GetTradeskillRepeatCount()
 end
 
@@ -4034,7 +3678,6 @@ end
 function GetTrainerServiceLevelReq(id)
 end
 
----@return unknown
 function GetTrainerServiceNumAbilityReq()
 end
 
@@ -4048,7 +3691,6 @@ end
 function GetTrainerServiceSkillReq(index)
 end
 
----@return unknown
 function GetTrainerServiceStepIndex()
 end
 
@@ -4057,31 +3699,24 @@ end
 function GetTrainerServiceTypeFilter(type)
 end
 
----@return unknown
 function GetTrainerTradeskillRankValues()
 end
 
----@return unknown
 function GetTutorialsEnabled()
 end
 
----@return unknown
 function GetUICameraInfo()
 end
 
----@return unknown
 function GetUITextureKitInfo()
 end
 
----@return unknown
 function GetUnitHealthModifier()
 end
 
----@return unknown
 function GetUnitMaxHealthModifier()
 end
 
----@return unknown
 function GetUnitPowerModifier()
 end
 
@@ -4090,11 +3725,9 @@ end
 function GetUnitSpeed(unit)
 end
 
----@return unknown
 function GetVideoCaps()
 end
 
----@return unknown
 function GetVideoOptions()
 end
 
@@ -4135,11 +3768,9 @@ end
 function GrantLevel(unit, levels)
 end
 
----@return unknown
 function GroupHasOfflineMember()
 end
 
----@return unknown
 function GuildControlAddRank()
 end
 
@@ -4147,11 +3778,9 @@ end
 function GuildControlDelRank(index)
 end
 
----@return unknown
 function GuildControlGetAllowedShifts()
 end
 
----@return unknown
 function GuildControlGetNumRanks()
 end
 
@@ -4171,11 +3800,9 @@ end
 function GuildControlSetRankFlag(index, enabled)
 end
 
----@return unknown
 function GuildControlShiftRankDown()
 end
 
----@return unknown
 function GuildControlShiftRankUp()
 end
 
@@ -4188,7 +3815,6 @@ function GuildDisband()
 end
 
 ---@url https://wow.gamepedia.com/API_GuildInfo
----@return unknown
 function GuildInfo()
 end
 
@@ -4200,7 +3826,6 @@ end
 function GuildLeave()
 end
 
----@return unknown
 function GuildMasterAbsent()
 end
 
@@ -4212,7 +3837,6 @@ end
 function GuildRoster()
 end
 
----@return unknown
 function GuildRosterSendSoR()
 end
 
@@ -4233,11 +3857,9 @@ function GuildSetMOTD(message)
 end
 
 ---@url https://wow.gamepedia.com/API_GuildUninvite
----@return unknown
 function GuildUninvite()
 end
 
----@return unknown
 function HandleAtlasMemberCommand()
 end
 
@@ -4246,11 +3868,9 @@ end
 function HasAction(actionSlot)
 end
 
----@return unknown
 function HasBonusActionBar()
 end
 
----@return unknown
 function HasDualWieldPenalty()
 end
 
@@ -4259,11 +3879,9 @@ end
 function HasFullControl()
 end
 
----@return unknown
 function HasIgnoreDualWieldWeapon()
 end
 
----@return unknown
 function HasInboxItem()
 end
 
@@ -4277,15 +3895,12 @@ end
 function HasKey()
 end
 
----@return unknown
 function HasLoadedCUFProfiles()
 end
 
----@return unknown
 function HasNewMail()
 end
 
----@return unknown
 function HasNoReleaseAura()
 end
 
@@ -4299,28 +3914,22 @@ end
 function HasPetUI()
 end
 
----@return unknown
 function HasSendMailItem()
 end
 
----@return unknown
 function HasTempShapeshiftActionBar()
 end
 
 ---@url https://wow.gamepedia.com/API_HasWandEquipped
----@return unknown
 function HasWandEquipped()
 end
 
----@return unknown
 function HaveQuestData()
 end
 
----@return unknown
 function HaveQuestRewardData()
 end
 
----@return unknown
 function HearthAndResurrectFromArea()
 end
 
@@ -4328,16 +3937,13 @@ end
 function HideRepairCursor()
 end
 
----@return unknown
 function HonorSystemEnabled()
 end
 
 ---@url https://wow.gamepedia.com/API_InActiveBattlefield
----@return unknown
 function InActiveBattlefield()
 end
 
----@return unknown
 function InCinematic()
 end
 
@@ -4360,7 +3966,6 @@ end
 function InitiateTrade(unit)
 end
 
----@return unknown
 function InteractUnit()
 end
 
@@ -4368,7 +3973,6 @@ end
 function InviteUnit(targetName)
 end
 
----@return unknown
 function Is64BitClient()
 end
 
@@ -4382,7 +3986,6 @@ end
 function IsActionInRange(actionSlot)
 end
 
----@return unknown
 function IsActiveQuestTrivial()
 end
 
@@ -4396,12 +3999,10 @@ end
 function IsAddOnLoaded(index_or_name)
 end
 
----@return unknown
 function IsAddonVersionCheckEnabled()
 end
 
 ---@url https://wow.gamepedia.com/API_IsAltKeyDown
----@return unknown
 function IsAltKeyDown()
 end
 
@@ -4425,23 +4026,18 @@ end
 function IsAutoRepeatAction(actionSlot)
 end
 
----@return unknown
 function IsAutoRepeatSpell()
 end
 
----@return unknown
 function IsAvailableQuestTrivial()
 end
 
----@return unknown
 function IsBNLogin()
 end
 
----@return unknown
 function IsBagSlotFlagEnabledOnOtherBags()
 end
 
----@return unknown
 function IsBagSlotFlagEnabledOnOtherBankBags()
 end
 
@@ -4450,23 +4046,18 @@ end
 function IsBattlePayItem(bag, slot)
 end
 
----@return unknown
 function IsCemeterySelectionAvailable()
 end
 
----@return unknown
 function IsChatAFK()
 end
 
----@return unknown
 function IsChatChannelRaid()
 end
 
----@return unknown
 function IsChatDND()
 end
 
----@return unknown
 function IsCompetitiveModeEnabled()
 end
 
@@ -4480,16 +4071,13 @@ end
 function IsConsumableItem(itemID_or_itemLink_or_itemName)
 end
 
----@return unknown
 function IsConsumableSpell()
 end
 
----@return unknown
 function IsContainerFiltered()
 end
 
 ---@url https://wow.gamepedia.com/API_IsControlKeyDown
----@return unknown
 function IsControlKeyDown()
 end
 
@@ -4498,11 +4086,9 @@ end
 function IsCurrentAction(actionSlot)
 end
 
----@return unknown
 function IsCurrentItem()
 end
 
----@return unknown
 function IsCurrentQuestFailed()
 end
 
@@ -4511,23 +4097,18 @@ end
 function IsCurrentSpell(spellID)
 end
 
----@return unknown
 function IsDebugBuild()
 end
 
----@return unknown
 function IsDesaturateSupported()
 end
 
----@return unknown
 function IsDisplayChannelModerator()
 end
 
----@return unknown
 function IsDisplayChannelOwner()
 end
 
----@return unknown
 function IsDressableItem()
 end
 
@@ -4536,15 +4117,12 @@ end
 function IsDualWielding()
 end
 
----@return unknown
 function IsEncounterInProgress()
 end
 
----@return unknown
 function IsEncounterLimitingResurrections()
 end
 
----@return unknown
 function IsEncounterSuppressingRelease()
 end
 
@@ -4568,11 +4146,9 @@ end
 function IsEquippedItemType(type)
 end
 
----@return unknown
 function IsEuropeanNumbers()
 end
 
----@return unknown
 function IsEveryoneAssistant()
 end
 
@@ -4592,16 +4168,13 @@ function IsFalling()
 end
 
 ---@url https://wow.gamepedia.com/API_IsFishingLoot
----@return unknown
 function IsFishingLoot()
 end
 
 ---@url https://wow.gamepedia.com/API_IsGMClient
----@return unknown
 function IsGMClient()
 end
 
----@return unknown
 function IsGUIDInGroup()
 end
 
@@ -4610,35 +4183,27 @@ end
 function IsGuildLeader()
 end
 
----@return unknown
 function IsGuildMember()
 end
 
----@return unknown
 function IsGuildRankAssignmentAllowed()
 end
 
----@return unknown
 function IsHarmfulItem()
 end
 
----@return unknown
 function IsHarmfulSpell()
 end
 
----@return unknown
 function IsHelpfulItem()
 end
 
----@return unknown
 function IsHelpfulSpell()
 end
 
----@return unknown
 function IsInAuthenticatedRank()
 end
 
----@return unknown
 function IsInCinematicScene()
 end
 
@@ -4652,7 +4217,6 @@ end
 function IsInGuild()
 end
 
----@return unknown
 function IsInGuildGroup()
 end
 
@@ -4676,11 +4240,9 @@ end
 function IsInventoryItemLocked(slotId)
 end
 
----@return unknown
 function IsInventoryItemProfessionBag()
 end
 
----@return unknown
 function IsItemAction()
 end
 
@@ -4689,22 +4251,18 @@ end
 function IsItemInRange(itemName_or_itemLink, unit)
 end
 
----@return unknown
 function IsKeyDown()
 end
 
 ---@url https://wow.gamepedia.com/API_IsLeftAltKeyDown
----@return unknown
 function IsLeftAltKeyDown()
 end
 
 ---@url https://wow.gamepedia.com/API_IsLeftControlKeyDown
----@return unknown
 function IsLeftControlKeyDown()
 end
 
 ---@url https://wow.gamepedia.com/API_IsLeftShiftKeyDown
----@return unknown
 function IsLeftShiftKeyDown()
 end
 
@@ -4712,7 +4270,6 @@ end
 function IsLinuxClient()
 end
 
----@return unknown
 function IsLoggedIn()
 end
 
@@ -4721,7 +4278,6 @@ end
 function IsMacClient()
 end
 
----@return unknown
 function IsMasterLooter()
 end
 
@@ -4736,7 +4292,6 @@ function IsModifierKeyDown()
 end
 
 ---@url https://wow.gamepedia.com/API_IsMounted
----@return unknown
 function IsMounted()
 end
 
@@ -4749,7 +4304,6 @@ end
 function IsMouselooking()
 end
 
----@return unknown
 function IsMovieLocal()
 end
 
@@ -4763,7 +4317,6 @@ end
 function IsOnGlueScreen()
 end
 
----@return unknown
 function IsOnTournamentRealm()
 end
 
@@ -4777,11 +4330,9 @@ end
 function IsOutdoors()
 end
 
----@return unknown
 function IsOutlineModeSupported()
 end
 
----@return unknown
 function IsPVPTimerRunning()
 end
 
@@ -4790,16 +4341,13 @@ end
 function IsPassiveSpell(spellId_or_index, bookType)
 end
 
----@return unknown
 function IsPetActive()
 end
 
----@return unknown
 function IsPetAttackAction()
 end
 
 ---@url https://wow.gamepedia.com/API_IsPetAttackActive
----@return unknown
 function IsPetAttackActive()
 end
 
@@ -4808,11 +4356,9 @@ end
 function IsPlayerAttacking(unit)
 end
 
----@return unknown
 function IsPlayerInWorld()
 end
 
----@return unknown
 function IsPlayerMoving()
 end
 
@@ -4821,7 +4367,6 @@ end
 function IsPlayerSpell(spellID)
 end
 
----@return unknown
 function IsPublicBuild()
 end
 
@@ -4839,23 +4384,18 @@ end
 function IsQuestFlaggedCompleted(questID)
 end
 
----@return unknown
 function IsQuestHardWatched()
 end
 
----@return unknown
 function IsQuestItemHidden()
 end
 
----@return unknown
 function IsQuestWatched()
 end
 
----@return unknown
 function IsRangedWeapon()
 end
 
----@return unknown
 function IsRecognizedName()
 end
 
@@ -4864,7 +4404,6 @@ end
 function IsReferAFriendLinked(unit)
 end
 
----@return unknown
 function IsReplacingUnit()
 end
 
@@ -4873,31 +4412,25 @@ end
 function IsResting()
 end
 
----@return unknown
 function IsRestrictedAccount()
 end
 
 ---@url https://wow.gamepedia.com/API_IsRightAltKeyDown
----@return unknown
 function IsRightAltKeyDown()
 end
 
 ---@url https://wow.gamepedia.com/API_IsRightControlKeyDown
----@return unknown
 function IsRightControlKeyDown()
 end
 
 ---@url https://wow.gamepedia.com/API_IsRightShiftKeyDown
----@return unknown
 function IsRightShiftKeyDown()
 end
 
----@return unknown
 function IsSelectedSpellBookItem()
 end
 
 ---@url https://wow.gamepedia.com/API_IsShiftKeyDown
----@return unknown
 function IsShiftKeyDown()
 end
 
@@ -4911,11 +4444,9 @@ end
 function IsSpellKnown(spellID, isPetSpell)
 end
 
----@return unknown
 function IsSpellKnownOrOverridesKnown()
 end
 
----@return unknown
 function IsStackableAction()
 end
 
@@ -4924,7 +4455,6 @@ end
 function IsStealthed()
 end
 
----@return unknown
 function IsSubZonePVPPOI()
 end
 
@@ -4938,7 +4468,6 @@ end
 function IsSwimming()
 end
 
----@return unknown
 function IsTestBuild()
 end
 
@@ -4957,7 +4486,6 @@ end
 function IsTrialAccount()
 end
 
----@return unknown
 function IsTutorialFlagged()
 end
 
@@ -4965,7 +4493,6 @@ end
 function IsUnitOnQuest(questIndex, unit)
 end
 
----@return unknown
 function IsUnitOnQuestByQuestID()
 end
 
@@ -4974,7 +4501,6 @@ end
 function IsUsableAction(slot)
 end
 
----@return unknown
 function IsUsableItem()
 end
 
@@ -4992,7 +4518,6 @@ end
 function IsWindowsClient()
 end
 
----@return unknown
 function ItemHasRange()
 end
 
@@ -5026,7 +4551,6 @@ end
 function ItemTextHasNextPage()
 end
 
----@return unknown
 function ItemTextIsFullPage()
 end
 
@@ -5075,23 +4599,18 @@ end
 function KBArticle_IsLoaded()
 end
 
----@return unknown
 function KBQuery_BeginLoading()
 end
 
----@return unknown
 function KBQuery_GetArticleHeaderCount()
 end
 
----@return unknown
 function KBQuery_GetArticleHeaderData()
 end
 
----@return unknown
 function KBQuery_GetTotalArticleCount()
 end
 
----@return unknown
 function KBQuery_IsLoaded()
 end
 
@@ -5177,7 +4696,6 @@ end
 function LeaveBattlefield()
 end
 
----@return unknown
 function LeaveChannelByLocalID()
 end
 
@@ -5206,7 +4724,6 @@ end
 function LoadBindings(bindingSet)
 end
 
----@return unknown
 function LoadURLIndex()
 end
 
@@ -5224,7 +4741,6 @@ end
 function Logout()
 end
 
----@return unknown
 function LootMoneyNotify()
 end
 
@@ -5237,7 +4753,6 @@ end
 function LootSlotHasItem(lootSlot)
 end
 
----@return unknown
 function MouseOverrideCinematicDisable()
 end
 
@@ -5249,11 +4764,9 @@ end
 function MouselookStop()
 end
 
----@return unknown
 function MoveAndSteerStart()
 end
 
----@return unknown
 function MoveAndSteerStop()
 end
 
@@ -5321,11 +4834,9 @@ end
 function MoveViewUpStop()
 end
 
----@return unknown
 function MultiSampleAntiAliasingSupported()
 end
 
----@return unknown
 function NextView()
 end
 
@@ -5351,16 +4862,13 @@ end
 function OfferPetition()
 end
 
----@return unknown
 function OpenTrainer()
 end
 
----@return unknown
 function OpeningCinematic()
 end
 
 ---@url https://wow.gamepedia.com/API_PartialPlayTime
----@return unknown
 function PartialPlayTime()
 end
 
@@ -5381,7 +4889,6 @@ end
 function PetCanBeAbandoned()
 end
 
----@return unknown
 function PetCanBeDismissed()
 end
 
@@ -5407,11 +4914,9 @@ end
 function PetHasActionBar()
 end
 
----@return unknown
 function PetHasSpellbook()
 end
 
----@return unknown
 function PetMoveTo()
 end
 
@@ -5427,7 +4932,6 @@ end
 function PetStopAttack()
 end
 
----@return unknown
 function PetUsesPetFrame()
 end
 
@@ -5491,19 +4995,15 @@ end
 function PickupTradeMoney(copper)
 end
 
----@return unknown
 function PitchDownStart()
 end
 
----@return unknown
 function PitchDownStop()
 end
 
----@return unknown
 function PitchUpStart()
 end
 
----@return unknown
 function PitchUpStop()
 end
 
@@ -5530,39 +5030,30 @@ end
 function PlaySoundFile(soundFile_or_soundFileID , channel)
 end
 
----@return unknown
 function PlayVocalErrorSoundID()
 end
 
----@return unknown
 function PlayerCanTeleport()
 end
 
----@return unknown
 function PlayerEffectiveAttackPower()
 end
 
----@return unknown
 function PlayerHasHearthstone()
 end
 
----@return unknown
 function PlayerIsPVPInactive()
 end
 
----@return unknown
 function PostAuction()
 end
 
----@return unknown
 function PreloadMovie()
 end
 
----@return unknown
 function PrevView()
 end
 
----@return unknown
 function PromoteToAssistant()
 end
 
@@ -5570,7 +5061,6 @@ end
 function PromoteToLeader(unitId_or_playerName)
 end
 
----@return unknown
 function PurchaseSlot()
 end
 
@@ -5598,11 +5088,9 @@ end
 function Quit()
 end
 
----@return unknown
 function RaidProfileExists()
 end
 
----@return unknown
 function RaidProfileHasUnsavedChanges()
 end
 
@@ -5610,7 +5098,6 @@ end
 function RandomRoll(low, high)
 end
 
----@return unknown
 function RedockChatWindows()
 end
 
@@ -5618,7 +5105,6 @@ end
 function RegisterCVar(name , value)
 end
 
----@return unknown
 function RegisterStaticConstants()
 end
 
@@ -5638,7 +5124,6 @@ end
 function RenamePetition(name)
 end
 
----@return unknown
 function ReopenInteraction()
 end
 
@@ -5662,15 +5147,12 @@ end
 function RepopMe()
 end
 
----@return unknown
 function ReportBug()
 end
 
----@return unknown
 function ReportPlayerIsPVPAFK()
 end
 
----@return unknown
 function ReportSuggestion()
 end
 
@@ -5694,19 +5176,15 @@ end
 function RequestTimePlayed()
 end
 
----@return unknown
 function ResetAddOns()
 end
 
----@return unknown
 function ResetCPUUsage()
 end
 
----@return unknown
 function ResetChatColors()
 end
 
----@return unknown
 function ResetChatWindows()
 end
 
@@ -5714,7 +5192,6 @@ end
 function ResetCursor()
 end
 
----@return unknown
 function ResetDisabledAddOns()
 end
 
@@ -5723,7 +5200,6 @@ function ResetInstances()
 end
 
 ---@url https://wow.gamepedia.com/API_ResetTestCvars
----@return unknown
 function ResetTestCvars()
 end
 
@@ -5731,19 +5207,15 @@ end
 function ResetTutorials()
 end
 
----@return unknown
 function ResetView()
 end
 
----@return unknown
 function ResistancePercent()
 end
 
----@return unknown
 function RespondMailLockSendItem()
 end
 
----@return unknown
 function RespondToInviteConfirmation()
 end
 
@@ -5751,19 +5223,15 @@ end
 function RestartGx()
 end
 
----@return unknown
 function RestoreRaidProfileFromCopy()
 end
 
----@return unknown
 function ResurrectGetOfferer()
 end
 
----@return unknown
 function ResurrectHasSickness()
 end
 
----@return unknown
 function ResurrectHasTimer()
 end
 
@@ -5771,7 +5239,6 @@ end
 function RetrieveCorpse()
 end
 
----@return unknown
 function ReturnInboxItem()
 end
 
@@ -5795,11 +5262,9 @@ end
 function RunScript(script)
 end
 
----@return unknown
 function SaveAddOns()
 end
 
----@return unknown
 function SaveRaidProfileCopy()
 end
 
@@ -5811,7 +5276,6 @@ end
 function Screenshot()
 end
 
----@return unknown
 function ScriptsDisallowedForBeta()
 end
 
@@ -5820,15 +5284,12 @@ end
 function SecureCmdOptionParse(options)
 end
 
----@return unknown
 function SelectActiveQuest()
 end
 
----@return unknown
 function SelectAvailableQuest()
 end
 
----@return unknown
 function SelectCraft()
 end
 
@@ -5848,7 +5309,6 @@ end
 function SelectQuestLogEntry(questIndex)
 end
 
----@return unknown
 function SelectTradeSkill()
 end
 
@@ -5861,7 +5321,6 @@ end
 function SelectedRealmName()
 end
 
----@return unknown
 function SellCursorItem()
 end
 
@@ -5873,7 +5332,6 @@ end
 function SendMail(recipient, subject, body)
 end
 
----@return unknown
 function SendSoRByText()
 end
 
@@ -5889,23 +5347,18 @@ end
 function SetActionBarToggles(bottomLeftState, bottomRightState, sideRightState, sideRight2State, alwaysShow)
 end
 
----@return unknown
 function SetActionUIButton()
 end
 
----@return unknown
 function SetAddonVersionCheck()
 end
 
----@return unknown
 function SetAllowDangerousScripts()
 end
 
----@return unknown
 function SetAllowLowLevelRaid()
 end
 
----@return unknown
 function SetAuctionsTabShowing()
 end
 
@@ -5913,15 +5366,12 @@ end
 function SetAutoDeclineGuildInvites(decline)
 end
 
----@return unknown
 function SetBagPortraitTexture()
 end
 
----@return unknown
 function SetBagSlotFlag()
 end
 
----@return unknown
 function SetBankBagSlotFlag()
 end
 
@@ -5964,7 +5414,6 @@ end
 function SetCVarBitfield(name, index, value , scriptCVar)
 end
 
----@return unknown
 function SetCemeteryPreference()
 end
 
@@ -5976,47 +5425,36 @@ end
 function SetChannelPassword(channelName, password)
 end
 
----@return unknown
 function SetChatColorNameByClass()
 end
 
----@return unknown
 function SetChatWindowAlpha()
 end
 
----@return unknown
 function SetChatWindowColor()
 end
 
----@return unknown
 function SetChatWindowDocked()
 end
 
----@return unknown
 function SetChatWindowLocked()
 end
 
----@return unknown
 function SetChatWindowName()
 end
 
----@return unknown
 function SetChatWindowSavedDimensions()
 end
 
----@return unknown
 function SetChatWindowSavedPosition()
 end
 
----@return unknown
 function SetChatWindowShown()
 end
 
----@return unknown
 function SetChatWindowSize()
 end
 
----@return unknown
 function SetChatWindowUninteractable()
 end
 
@@ -6024,7 +5462,6 @@ end
 function SetConsoleKey(key)
 end
 
----@return unknown
 function SetCurrentGraphicsSetting()
 end
 
@@ -6033,15 +5470,12 @@ end
 function SetCursor(cursor)
 end
 
----@return unknown
 function SetDefaultVideoOptions()
 end
 
----@return unknown
 function SetEuropeanNumbers()
 end
 
----@return unknown
 function SetEveryoneIsAssistant()
 end
 
@@ -6057,7 +5491,6 @@ end
 function SetGuildInfoText(text)
 end
 
----@return unknown
 function SetGuildMemberRank()
 end
 
@@ -6069,19 +5502,15 @@ end
 function SetGuildRosterShowOffline(enabled)
 end
 
----@return unknown
 function SetInWorldUIVisibility()
 end
 
----@return unknown
 function SetInsertItemsLeftToRight()
 end
 
----@return unknown
 function SetInventoryPortraitTexture()
 end
 
----@return unknown
 function SetItemSearch()
 end
 
@@ -6089,7 +5518,6 @@ end
 function SetLootMethod(method ,masterPlayer_or_threshold)
 end
 
----@return unknown
 function SetLootPortrait()
 end
 
@@ -6097,11 +5525,9 @@ end
 function SetLootThreshold(threshold)
 end
 
----@return unknown
 function SetMacroItem()
 end
 
----@return unknown
 function SetMacroSpell()
 end
 
@@ -6109,7 +5535,6 @@ end
 function SetModifiedClick(action, key)
 end
 
----@return unknown
 function SetMouselookOverrideBinding()
 end
 
@@ -6138,11 +5563,9 @@ function SetOverrideBindingSpell(owner, isPriority, key, spell)
 end
 
 ---@url https://wow.gamepedia.com/API_SetPVP
----@return unknown
 function SetPVP()
 end
 
----@return unknown
 function SetPartyAssignment()
 end
 
@@ -6172,11 +5595,9 @@ end
 function SetPortraitToTexture(texture_or_texture, texturePath)
 end
 
----@return unknown
 function SetRaidProfileOption()
 end
 
----@return unknown
 function SetRaidProfileSavedPosition()
 end
 
@@ -6188,7 +5609,6 @@ end
 function SetRaidTarget(unit, iconId)
 end
 
----@return unknown
 function SetRaidTargetProtected()
 end
 
@@ -6204,15 +5624,12 @@ end
 function SetSelectedBattlefield(index)
 end
 
----@return unknown
 function SetSelectedDisplayChannel()
 end
 
----@return unknown
 function SetSelectedFaction()
 end
 
----@return unknown
 function SetSelectedScreenResolutionIndex()
 end
 
@@ -6220,27 +5637,21 @@ end
 function SetSelectedSkill(index)
 end
 
----@return unknown
 function SetSendMailCOD()
 end
 
----@return unknown
 function SetSendMailMoney()
 end
 
----@return unknown
 function SetSendMailShowing()
 end
 
----@return unknown
 function SetSpellbookPetAction()
 end
 
----@return unknown
 function SetSuperTrackedQuestID()
 end
 
----@return unknown
 function SetTaxiBenchmarkMode()
 end
 
@@ -6264,7 +5675,6 @@ end
 function SetTrainerServiceTypeFilter(type, status , exclusive)
 end
 
----@return unknown
 function SetUIVisibility()
 end
 
@@ -6277,15 +5687,12 @@ function SetWatchedFactionIndex(index)
 end
 
 ---@url https://wow.gamepedia.com/API_SetupFullscreenScale
----@return unknown
 function SetupFullscreenScale()
 end
 
----@return unknown
 function ShowBossFrameWhenUninteractable()
 end
 
----@return unknown
 function ShowBuybackSellCursor()
 end
 
@@ -6293,7 +5700,6 @@ end
 function ShowCloak(flag)
 end
 
----@return unknown
 function ShowContainerSellCursor()
 end
 
@@ -6301,7 +5707,6 @@ end
 function ShowHelm(flag)
 end
 
----@return unknown
 function ShowInventorySellCursor()
 end
 
@@ -6309,7 +5714,6 @@ end
 function ShowQuestComplete(questLogIndex)
 end
 
----@return unknown
 function ShowQuestOffer()
 end
 
@@ -6335,11 +5739,9 @@ end
 function SitStandOrDescendStart()
 end
 
----@return unknown
 function SortAuctionApplySort()
 end
 
----@return unknown
 function SortAuctionClearSort()
 end
 
@@ -6347,11 +5749,9 @@ end
 function SortAuctionItems(type, sort)
 end
 
----@return unknown
 function SortAuctionSetSort()
 end
 
----@return unknown
 function SortBattlefieldScoreData()
 end
 
@@ -6359,7 +5759,6 @@ end
 function SortGuildRoster( level )
 end
 
----@return unknown
 function SortQuestSortTypes()
 end
 
@@ -6368,51 +5767,39 @@ end
 function SortQuestWatches()
 end
 
----@return unknown
 function SortQuests()
 end
 
----@return unknown
 function Sound_ChatSystem_GetInputDriverNameByIndex()
 end
 
----@return unknown
 function Sound_ChatSystem_GetNumInputDrivers()
 end
 
----@return unknown
 function Sound_ChatSystem_GetNumOutputDrivers()
 end
 
----@return unknown
 function Sound_ChatSystem_GetOutputDriverNameByIndex()
 end
 
----@return unknown
 function Sound_GameSystem_GetInputDriverNameByIndex()
 end
 
----@return unknown
 function Sound_GameSystem_GetNumInputDrivers()
 end
 
----@return unknown
 function Sound_GameSystem_GetNumOutputDrivers()
 end
 
----@return unknown
 function Sound_GameSystem_GetOutputDriverNameByIndex()
 end
 
----@return unknown
 function Sound_GameSystem_RestartSoundSystem()
 end
 
----@return unknown
 function SpellCanTargetItem()
 end
 
----@return unknown
 function SpellCanTargetItemID()
 end
 
@@ -6421,7 +5808,6 @@ end
 function SpellCanTargetUnit(unitId)
 end
 
----@return unknown
 function SpellCancelQueuedSpell()
 end
 
@@ -6430,15 +5816,12 @@ end
 function SpellGetVisibilityInfo(spellId, visType)
 end
 
----@return unknown
 function SpellHasRange()
 end
 
----@return unknown
 function SpellIsAlwaysShown()
 end
 
----@return unknown
 function SpellIsSelfBuff()
 end
 
@@ -6456,7 +5839,6 @@ end
 function SpellStopTargeting()
 end
 
----@return unknown
 function SpellTargetItem()
 end
 
@@ -6472,7 +5854,6 @@ end
 function StablePet()
 end
 
----@return unknown
 function StartAttack()
 end
 
@@ -6480,7 +5861,6 @@ end
 function StartAuction(minBid, buyoutPrice, runTime, stackSize, numStacks)
 end
 
----@return unknown
 function StartAutoRun()
 end
 
@@ -6488,19 +5868,15 @@ end
 function StartDuel(playerName)
 end
 
----@return unknown
 function StopAttack()
 end
 
----@return unknown
 function StopAutoRun()
 end
 
----@return unknown
 function StopCinematic()
 end
 
----@return unknown
 function StopMacro()
 end
 
@@ -6512,7 +5888,6 @@ end
 function StopSound(soundHandle , fadeoutTime)
 end
 
----@return unknown
 function StoreSecureReference()
 end
 
@@ -6536,7 +5911,6 @@ end
 function Stuck()
 end
 
----@return unknown
 function SubmitRequiredGuildRename()
 end
 
@@ -6545,7 +5919,6 @@ function SummonFriend(unit)
 end
 
 ---@url https://wow.gamepedia.com/API_SwapChatChannelByLocalID
----@return unknown
 function SwapChatChannelByLocalID()
 end
 
@@ -6561,7 +5934,6 @@ end
 function TakeInboxMoney(index)
 end
 
----@return unknown
 function TakeInboxTextItem()
 end
 
@@ -6569,15 +5941,12 @@ end
 function TakeTaxiNode(index)
 end
 
----@return unknown
 function TargetDirectionEnemy()
 end
 
----@return unknown
 function TargetDirectionFinished()
 end
 
----@return unknown
 function TargetDirectionFriend()
 end
 
@@ -6585,7 +5954,6 @@ end
 function TargetLastEnemy()
 end
 
----@return unknown
 function TargetLastFriend()
 end
 
@@ -6593,7 +5961,6 @@ end
 function TargetLastTarget()
 end
 
----@return unknown
 function TargetNearest()
 end
 
@@ -6601,7 +5968,6 @@ end
 function TargetNearestEnemy(reverse)
 end
 
----@return unknown
 function TargetNearestEnemyPlayer()
 end
 
@@ -6609,23 +5975,18 @@ end
 function TargetNearestFriend( reverse )
 end
 
----@return unknown
 function TargetNearestFriendPlayer()
 end
 
----@return unknown
 function TargetNearestPartyMember()
 end
 
----@return unknown
 function TargetNearestRaidMember()
 end
 
----@return unknown
 function TargetPriorityHighlightEnd()
 end
 
----@return unknown
 function TargetPriorityHighlightStart()
 end
 
@@ -6639,11 +6000,9 @@ function TaxiGetDestX(destinationIndex, routeIndex)
 end
 
 ---@url https://wow.gamepedia.com/API_TaxiGetDestY
----@return unknown
 function TaxiGetDestY()
 end
 
----@return unknown
 function TaxiGetNodeSlot()
 end
 
@@ -6657,7 +6016,6 @@ end
 function TaxiGetSrcY(destinationIndex, routeIndex)
 end
 
----@return unknown
 function TaxiIsDirectFlight()
 end
 
@@ -6681,7 +6039,6 @@ end
 function TaxiNodePosition(index)
 end
 
----@return unknown
 function TaxiRequestEarlyLanding()
 end
 
@@ -6689,7 +6046,6 @@ end
 function TimeoutResurrect()
 end
 
----@return unknown
 function ToggleAnimKitDisplay()
 end
 
@@ -6697,7 +6053,6 @@ end
 function ToggleAutoRun()
 end
 
----@return unknown
 function ToggleDebugAIDisplay()
 end
 
@@ -6705,7 +6060,6 @@ end
 function TogglePVP()
 end
 
----@return unknown
 function TogglePetAutocast()
 end
 
@@ -6713,7 +6067,6 @@ end
 function ToggleRun(theTime)
 end
 
----@return unknown
 function ToggleSelfHighlight()
 end
 
@@ -6721,19 +6074,15 @@ end
 function ToggleSheath()
 end
 
----@return unknown
 function ToggleSpellAutocast()
 end
 
----@return unknown
 function ToggleWindowed()
 end
 
----@return unknown
 function TriggerTutorial()
 end
 
----@return unknown
 function TurnInGuildCharter()
 end
 
@@ -6848,7 +6197,6 @@ function UnitDamage(unit)
 end
 
 ---@url https://wow.gamepedia.com/API_UnitDebuff
----@return unknown
 function UnitDebuff()
 end
 
@@ -6882,7 +6230,6 @@ end
 function UnitGUID(unit)
 end
 
----@return unknown
 function UnitHPPerStamina()
 end
 
@@ -6891,7 +6238,6 @@ end
 function UnitHasIncomingResurrection(unitID_or_UnitName)
 end
 
----@return unknown
 function UnitHasRelicSlot()
 end
 
@@ -6905,7 +6251,6 @@ end
 function UnitHealthMax(unit)
 end
 
----@return unknown
 function UnitInAnyGroup()
 end
 
@@ -6914,7 +6259,6 @@ end
 function UnitInBattleground(unit)
 end
 
----@return unknown
 function UnitInOtherParty()
 end
 
@@ -6923,7 +6267,6 @@ end
 function UnitInParty(unit)
 end
 
----@return unknown
 function UnitInPhase()
 end
 
@@ -6937,7 +6280,6 @@ end
 function UnitInRange(unit)
 end
 
----@return unknown
 function UnitInSubgroup()
 end
 
@@ -6961,11 +6303,9 @@ end
 function UnitIsConnected(unit)
 end
 
----@return unknown
 function UnitIsControlling()
 end
 
----@return unknown
 function UnitIsCorpse()
 end
 
@@ -6985,7 +6325,6 @@ function UnitIsDeadOrGhost(unit)
 end
 
 ---@url https://wow.gamepedia.com/API_UnitIsEnemy
----@return unknown
 function UnitIsEnemy()
 end
 
@@ -7014,11 +6353,9 @@ end
 function UnitIsGroupLeader(unit_or_PlayerName)
 end
 
----@return unknown
 function UnitIsInMyGuild()
 end
 
----@return unknown
 function UnitIsOtherPlayersPet()
 end
 
@@ -7037,7 +6374,6 @@ end
 function UnitIsPVPFreeForAll(unitId)
 end
 
----@return unknown
 function UnitIsPVPSanctuary()
 end
 
@@ -7051,7 +6387,6 @@ end
 function UnitIsPossessed(unit)
 end
 
----@return unknown
 function UnitIsRaidOfficer()
 end
 
@@ -7060,7 +6395,6 @@ end
 function UnitIsSameServer(unit)
 end
 
----@return unknown
 function UnitIsTapDenied()
 end
 
@@ -7069,7 +6403,6 @@ end
 function UnitIsTrivial(unit)
 end
 
----@return unknown
 function UnitIsUnconscious()
 end
 
@@ -7079,11 +6412,9 @@ function UnitIsUnit(unit1, unit2)
 end
 
 ---@url https://wow.gamepedia.com/API_UnitIsVisible
----@return unknown
 function UnitIsVisible()
 end
 
----@return unknown
 function UnitLeadsAnyGroup()
 end
 
@@ -7201,7 +6532,6 @@ end
 function UnitSex(unit)
 end
 
----@return unknown
 function UnitShouldDisplayName()
 end
 
@@ -7210,15 +6540,12 @@ end
 function UnitStat(unit, statID)
 end
 
----@return unknown
 function UnitTrialBankedLevels()
 end
 
----@return unknown
 function UnitTrialXP()
 end
 
----@return unknown
 function UnitWeaponAttackPower()
 end
 
@@ -7236,15 +6563,12 @@ end
 function UnstablePet(index)
 end
 
----@return unknown
 function UpdateAddOnCPUUsage()
 end
 
----@return unknown
 function UpdateAddOnMemoryUsage()
 end
 
----@return unknown
 function UpdateInventoryAlertStatus()
 end
 
@@ -7256,7 +6580,6 @@ end
 function UseContainerItem(bagID, slot , target, reagentBankAccessible)
 end
 
----@return unknown
 function UseHearthstone()
 end
 
@@ -7273,59 +6596,45 @@ end
 function abs(num)
 end
 
----@return unknown
 function acos()
 end
 
----@return unknown
 function addframetext()
 end
 
----@return unknown
 function asin()
 end
 
----@return unknown
 function assert()
 end
 
----@return unknown
 function atan()
 end
 
----@return unknown
 function atan2()
 end
 
----@return unknown
 function bit.arshift()
 end
 
----@return unknown
 function bit.band()
 end
 
----@return unknown
 function bit.bnot()
 end
 
----@return unknown
 function bit.bor()
 end
 
----@return unknown
 function bit.bxor()
 end
 
----@return unknown
 function bit.lshift()
 end
 
----@return unknown
 function bit.mod()
 end
 
----@return unknown
 function bit.rshift()
 end
 
@@ -7338,31 +6647,24 @@ end
 function collectgarbage(opt , arg)
 end
 
----@return unknown
 function coroutine.create()
 end
 
----@return unknown
 function coroutine.resume()
 end
 
----@return unknown
 function coroutine.running()
 end
 
----@return unknown
 function coroutine.status()
 end
 
----@return unknown
 function coroutine.wrap()
 end
 
----@return unknown
 function coroutine.yield()
 end
 
----@return unknown
 function cos()
 end
 
@@ -7370,7 +6672,6 @@ end
 function date(format , time)
 end
 
----@return unknown
 function debuglocals()
 end
 
@@ -7388,19 +6689,15 @@ end
 function debugstack(coroutine, start, count1, count2)
 end
 
----@return unknown
 function deg()
 end
 
----@return unknown
 function difftime()
 end
 
----@return unknown
 function error()
 end
 
----@return unknown
 function exp()
 end
 
@@ -7430,7 +6727,6 @@ end
 function format(formatstring, e1, e2, ...)
 end
 
----@return unknown
 function frexp()
 end
 
@@ -7439,15 +6735,12 @@ end
 function gcinfo()
 end
 
----@return unknown
 function geterrorhandler()
 end
 
----@return unknown
 function getfenv()
 end
 
----@return unknown
 function getmetatable()
 end
 
@@ -7456,7 +6749,6 @@ end
 function getn(table)
 end
 
----@return unknown
 function gmatch()
 end
 
@@ -7483,7 +6775,6 @@ end
 function issecurevariable(table, variable)
 end
 
----@return unknown
 function ldexp()
 end
 
@@ -7492,131 +6783,99 @@ end
 function loadstring(luaCodeBlock, chunkName)
 end
 
----@return unknown
 function log()
 end
 
----@return unknown
 function log10()
 end
 
----@return unknown
 function math.abs()
 end
 
----@return unknown
 function math.acos()
 end
 
----@return unknown
 function math.asin()
 end
 
----@return unknown
 function math.atan()
 end
 
----@return unknown
 function math.atan2()
 end
 
----@return unknown
 function math.ceil()
 end
 
----@return unknown
 function math.cos()
 end
 
----@return unknown
 function math.cosh()
 end
 
----@return unknown
 function math.deg()
 end
 
----@return unknown
 function math.exp()
 end
 
----@return unknown
 function math.floor()
 end
 
----@return unknown
 function math.fmod()
 end
 
----@return unknown
 function math.frexp()
 end
 
----@return unknown
 function math.ldexp()
 end
 
----@return unknown
 function math.log()
 end
 
----@return unknown
 function math.log10()
 end
 
----@return unknown
 function math.max()
 end
 
----@return unknown
 function math.min()
 end
 
----@return unknown
 function math.modf()
 end
 
----@return unknown
 function math.pow()
 end
 
----@return unknown
 function math.rad()
 end
 
----@return unknown
 function math.random()
 end
 
----@return unknown
 function math.sin()
 end
 
----@return unknown
 function math.sinh()
 end
 
----@return unknown
 function math.sqrt()
 end
 
----@return unknown
 function math.tan()
 end
 
----@return unknown
 function math.tanh()
 end
 
----@return unknown
 function max()
 end
 
----@return unknown
 function min()
 end
 
----@return unknown
 function mod()
 end
 
@@ -7640,7 +6899,6 @@ end
 function pcall(func, arg1, arg2, ...)
 end
 
----@return unknown
 function rad()
 end
 
@@ -7649,11 +6907,9 @@ end
 function random( low,  high)
 end
 
----@return unknown
 function rawequal()
 end
 
----@return unknown
 function rawget()
 end
 
@@ -7662,7 +6918,6 @@ end
 function rawset(table, index, value)
 end
 
----@return unknown
 function scrub()
 end
 
@@ -7680,15 +6935,12 @@ end
 function seterrorhandler(errFunction)
 end
 
----@return unknown
 function setfenv()
 end
 
----@return unknown
 function setmetatable()
 end
 
----@return unknown
 function sin()
 end
 
@@ -7696,7 +6948,6 @@ end
 function sort(table, compFunc)
 end
 
----@return unknown
 function sqrt()
 end
 
@@ -7710,11 +6961,9 @@ end
 function strchar(i1, i2, ...)
 end
 
----@return unknown
 function strcmputf8i()
 end
 
----@return unknown
 function strconcat()
 end
 
@@ -7735,23 +6984,18 @@ end
 function string.find(string, pattern , initpos , plain)
 end
 
----@return unknown
 function string.format()
 end
 
----@return unknown
 function string.gfind()
 end
 
----@return unknown
 function string.gmatch()
 end
 
----@return unknown
 function string.gsub()
 end
 
----@return unknown
 function string.join()
 end
 
@@ -7772,14 +7016,12 @@ end
 function string.reverse(string)
 end
 
----@return unknown
 function string.split()
 end
 
 function string.sub(s, i , j)
 end
 
----@return unknown
 function string.trim()
 end
 
@@ -7795,7 +7037,6 @@ end
 function strlen(s)
 end
 
----@return unknown
 function strlenutf8()
 end
 
@@ -7834,19 +7075,15 @@ end
 function strupper(s)
 end
 
----@return unknown
 function table.concat()
 end
 
----@return unknown
 function table.foreach()
 end
 
----@return unknown
 function table.foreachi()
 end
 
----@return unknown
 function table.getn()
 end
 
@@ -7854,14 +7091,12 @@ end
 function table.insert(table, pos, value)
 end
 
----@return unknown
 function table.maxn()
 end
 
 function table.remove(table , pos)
 end
 
----@return unknown
 function table.removemulti()
 end
 
@@ -7869,15 +7104,12 @@ end
 function table.setn(table, n)
 end
 
----@return unknown
 function table.sort()
 end
 
----@return unknown
 function table.wipe()
 end
 
----@return unknown
 function tan()
 end
 
@@ -7918,7 +7150,6 @@ end
 function wipe(table)
 end
 
----@return unknown
 function xpcall()
 end
 

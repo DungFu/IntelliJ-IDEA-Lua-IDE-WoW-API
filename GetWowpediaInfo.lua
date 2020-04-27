@@ -233,12 +233,8 @@ for _,k in pairs(apiKeys) do
         preFunction = preFunction .. "---@url " .. BASE_WOWPEDIA_ADDRESS .. api_entries[k].address .. "\n"
     end
 
-    if api_entries[k].returns_all then
-        if api_entries[k].returns_all ~= "nil" then
-            preFunction = preFunction .. "---@return " .. api_entries[k].returns_all .. "\n"
-        end
-    else
-        preFunction = preFunction .. "---@return " .. "unknown\n"
+    if api_entries[k].returns_all and api_entries[k].returns_all ~= "nil" then
+        preFunction = preFunction .. "---@return " .. api_entries[k].returns_all .. "\n"
     end
 
     if api_entries[k].arguments_all then
