@@ -1,10 +1,10 @@
 --[[
     Author: Britt Yazel (aka Soyier)
     Date: April 12th, 2020
-	This script will read the documentation from Wowpedia (WoW Gamepedia) to generate a single global api file
-	readable by IntelliJ to use as source. It tries to avoid functions included in the in-game API that is parsed separately.
+    This script will read the documentation from Wowpedia (WoW Gamepedia) to generate a single global api file
+    readable by IntelliJ to use as source. It tries to avoid functions included in the in-game API that is parsed separately.
 
-	**Note**, since we are parsing thousands of pages, it takes quite a while to generate the content. ~5min
+    **Note**, since we are parsing thousands of pages, it takes quite a while to generate the content. ~5min
 ]]
 
 --this script requires the lua modules:
@@ -27,6 +27,7 @@ end
 
 --parse the individual lines and create the base of a an api_entries table with all the api functions (we need to parse line by line to see if this is the right content)
 local api_entries = {}
+local total_entries = 0
 for k,v in pairs(lines) do
     --all API entry lines seem to have title="API in the string, which is nice for us to narrow down
     --we can ignore any api entries starting with C_ because those are all parsed form the in-game API separately
@@ -37,6 +38,7 @@ for k,v in pairs(lines) do
         local api_entry = string.sub(v, start+1, finish-1)
 
         api_entries[api_entry] = {}
+        total_entries = total_entries + 1
 
         --parse through the list of lines and split out just the matching addresses for pages with actual information on them
         --these pages all seem to have "/API_ in the start of their href line
@@ -58,8 +60,9 @@ for k,v in pairs(lines) do
 end
 
 
-
+local progress = 0
 for k,v in pairs(api_entries) do
+    progress = progress + 1
     if api_entries[k].address then
         local spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[k].address)
         if spellPageBody then
@@ -74,6 +77,7 @@ for k,v in pairs(api_entries) do
             end
 
             api_entries[k].functionHeader = {}
+            api_entries[k].spellPageBody = spellPageBody
 
             --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
             for line in functionHeader:gmatch("([^\n]*)\n?") do
@@ -128,25 +132,8 @@ for k,v in pairs(api_entries) do
                 end
             end
 
-
-            --[[
-            --split between h2 chunks to parse out argument and returns
-            local h2Table = {}
-            --some entries contain multiple functions per functionHeader block, account for that here and split into separate lines
-            for chunk in spellPageBody:gmatch("[^<h2>]+") do
-                if string.find(chunk,"id=\"Returns\"") then
-
-                end
-
-                if string.find(chunk,"id=\"Returns\"") then
-
-                end
-            end
-            ]]
-
-
             --give some feedback as it's going so you know it's not stuck. Simply print the name of the current function
-            print(k)
+            print("[" .. math.floor((progress / total_entries) * 1000) / 10 .. "%] " .. k)
 
         end
     end
@@ -189,8 +176,6 @@ for k,v in pairs(api_entries) do
                 local _,argStart = string.find(v2,"%(") --find the index where the right side of the expression starts
                 local argFinish, _ = string.find(v2,"%)")
 
-                local spellPageBody = nil
-
                 if argStart and argFinish then
                     api_entries[functionName].arguments = {}
                     api_entries[functionName].argumentsDetails = {}
@@ -200,10 +185,7 @@ for k,v in pairs(api_entries) do
                     for option in (","..arguments_all..","):gmatch("[^,]+") do
                         option = option:gsub("^%s*(.-)%s*$", "%1") --remove leading/trailing white space
 
-                        if not spellPageBody and api_entries[functionName].address then
-                            spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[functionName].address)
-                        end
-
+                        local spellPageBody = api_entries[functionName].spellPageBody
                         if spellPageBody then
                             local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
                             if not start then
@@ -239,10 +221,7 @@ for k,v in pairs(api_entries) do
                     for option in (","..returns_all..","):gmatch("[^,]+") do
                         option = option:gsub("^%s*(.-)%s*$", "%1") --remove leading/trailing white space
 
-                        if not spellPageBody and api_entries[functionName].address then
-                            spellPageBody = https.request(BASE_WOWPEDIA_ADDRESS .. api_entries[functionName].address)
-                        end
-
+                        local spellPageBody = api_entries[functionName].spellPageBody
                         if spellPageBody then
                             local _, start = string.find(spellPageBody,"<dt>"..option.."[(&#160;)]*</dt>")
                             if not start then
