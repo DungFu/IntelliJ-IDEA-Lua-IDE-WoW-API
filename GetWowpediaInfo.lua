@@ -80,6 +80,7 @@ for k,v in pairs(api_entries) do
             spellPageBody = spellPageBody:gsub("&#32;", "")
             spellPageBody = spellPageBody:gsub("&lt;", "<")
             spellPageBody = spellPageBody:gsub("&gt;", ">")
+            spellPageBody = spellPageBody:gsub("&#8594;", "→")
 
             --the example function blocks all are wrapped in a <pre> tag, so we can use that to isolate our function headers
             --note, on some entries there are multiple functions in one page, so we need to parse them apart
